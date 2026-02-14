@@ -12,6 +12,11 @@ Each report represents a finalized backtest executed with parameters selected fr
 
 ## Q1 System
 
+### [v2.0](https://reports.algoq.net/q1-system/v2.0/)
+
+- [2026-01](https://reports.algoq.net/q1-system/v2.0/2026-01/)
+- [2025](https://reports.algoq.net/q1-system/v2.0/2025/)
+
 ### [v1.0](https://reports.algoq.net/q1-system/v1.0/)
 
 - [2025-12](https://reports.algoq.net/q1-system/v1.0/2025-12/)

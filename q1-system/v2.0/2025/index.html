@@ -1,0 +1,3751 @@
+
+<!DOCTYPE html>
+<html data-app-version="4.8.2">
+    <head>
+        <title>Historical Replay Report | cTrader</title>
+
+        <meta name="title" content="Historical Replay Report | cTrader">
+        <meta name="description" content="Backtesting report of a cBot from cTrader Algo: equity, trade statistics, parameters, used symbols, positions, orders, history.">
+
+        <meta name="author" content="Spotware Systems Ltd">
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-eval' 'unsafe-inline' data: https: http: gap: ws: wss: blob: filesystem: file:">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+
+        <style type="text/css" data-fela-rehydration="58" data-fela-type="KEYFRAME">@-webkit-keyframes spinner-k1{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@-moz-keyframes spinner-k1{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@keyframes spinner-k1{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@-webkit-keyframes spinner-k2{0%{transform:rotate(0deg)}100%{transform:rotate(-360deg)}}@-moz-keyframes spinner-k2{0%{transform:rotate(0deg)}100%{transform:rotate(-360deg)}}@keyframes spinner-k2{0%{transform:rotate(0deg)}100%{transform:rotate(-360deg)}}</style><style type="text/css" data-fela-rehydration="58" data-fela-type="RULE">.spinner-a{position:absolute}.spinner-b{margin-left:auto}.spinner-c{margin-bottom:auto}.spinner-d{margin-right:auto}.spinner-e{margin-top:auto}.spinner-f{top:0}.spinner-g{bottom:0}.spinner-h{left:0}.spinner-i{right:0}.spinner-j{width:50px}.spinner-k{height:50px}.spinner-l{display:flex}.spinner-m{z-index:200}.spinner-n:before{content:""}.spinner-o:before{position:absolute}.spinner-p:before{border-style:solid}.spinner-q:before{border-top-left-radius:50%}.spinner-r:before{border-top-right-radius:50%}.spinner-s:before{border-bottom-right-radius:50%}.spinner-t:before{border-bottom-left-radius:50%}.spinner-u:before{display:inline-block}.spinner-v:before{box-sizing:border-box}.spinner-w:before{border-width:7px}.spinner-x:before{border-top-color:transparent}.spinner-y:before{border-left-color:transparent}.spinner-z:before{margin-top:7px}.spinner-ab:before{margin-right:7px}.spinner-ac:before{margin-bottom:7px}.spinner-ae:before{margin-left:7px}.spinner-af:before{width:calc(100% - 14px)}.spinner-ag:before{height:calc(100% - 14px)}.spinner-ah:before{border-right-color:#e75731}.spinner-ai:before{border-bottom-color:#e75731}.spinner-aj:before{animation-iteration-count:infinite}.spinner-ak:before{animation-timing-function:linear}.spinner-al:before{animation-duration:0.6s}.spinner-am:before{animation-name:spinner-k2}.spinner-an:after{content:""}.spinner-ao:after{position:absolute}.spinner-ap:after{border-style:solid}.spinner-aq:after{border-top-left-radius:50%}.spinner-ar:after{border-top-right-radius:50%}.spinner-as:after{border-bottom-right-radius:50%}.spinner-at:after{border-bottom-left-radius:50%}.spinner-au:after{display:inline-block}.spinner-av:after{box-sizing:border-box}.spinner-aw:after{border-width:7px}.spinner-ax:after{border-top-color:transparent}.spinner-ay:after{border-left-color:transparent}.spinner-az:after{width:100%}.spinner-ba:after{height:100%}.spinner-bb:after{border-right-color:rgba(36, 150, 73, 0.9)}.spinner-bc:after{border-bottom-color:rgba(36, 150, 73, 0.9)}.spinner-bd:after{animation-iteration-count:infinite}.spinner-be:after{animation-timing-function:linear}.spinner-bf:after{animation-duration:0.9s}.spinner-bg:after{animation-name:spinner-k1}</style>
+
+        <style>
+            html {
+                height: 100%;
+            }
+
+            body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            #root {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+
+        <!-- startBacktestingReport -->
+        <script type="application/json" id="backtesting-report">{
+  "main": {
+    "utcOffset": 0,
+    "language": "en",
+    "depositAsset": "USD",
+    "depositAssetDigits": 2,
+    "period": "m1",
+    "symbol": "XAUUSD",
+    "brokerTitle": "Fusion Markets",
+    "cBotName": "Q1 System",
+    "roi": 776.37,
+    "netProfit": 77636.51,
+    "startingCapital": 10000,
+    "endingEquity": 87636.51000000004,
+    "endingBalance": 87631.23000000004,
+    "testingPeriod": {
+      "duration": "1y",
+      "startDate": 1735689600000,
+      "endDate": 1767225600000,
+      "formatted": "1y (01-01-2025 - 01-01-2026)"
+    },
+    "accountType": "hedging",
+    "accountLeverage": 500,
+    "data": {
+      "type": "tickDataFromServer",
+      "isCustom": false,
+      "customName": null
+    },
+    "spread": null,
+    "commissions": {
+      "type": "usdPerMillionUsdVolume",
+      "value": 30,
+      "applyCommissionAutomatically": false
+    },
+    "theme": "dark",
+    "titleKind": "backtesting",
+    "authorNickName": "AlgoQ",
+    "authorLink": "https://ctrader.com/profile/AlgoQ",
+    "cBotLink": "https://ctrader.com/products/3188",
+    "embedded": false
+  },
+  "equity": {
+    "points": [
+      {
+        "balance": 10000,
+        "minEquity": 10000,
+        "maxEquity": 10000,
+        "timestamp": 1735689600000
+      },
+      {
+        "balance": 12214.11,
+        "minEquity": 9263.02,
+        "maxEquity": 12214.27,
+        "timestamp": 1736429841661
+      },
+      {
+        "balance": 14468.1,
+        "minEquity": 11456.650000000001,
+        "maxEquity": 14468.400000000001,
+        "timestamp": 1737045402670
+      },
+      {
+        "balance": 16840.05,
+        "minEquity": 14188.050000000001,
+        "maxEquity": 16891.21,
+        "timestamp": 1737684041351
+      },
+      {
+        "balance": 19263.34,
+        "minEquity": 15805.71,
+        "maxEquity": 19267.51,
+        "timestamp": 1738593391856
+      },
+      {
+        "balance": 21851.62,
+        "minEquity": 18705.95,
+        "maxEquity": 21852.4,
+        "timestamp": 1738748545769
+      },
+      {
+        "balance": 24494.239999999998,
+        "minEquity": 20845.28,
+        "maxEquity": 24495.18,
+        "timestamp": 1739236302948
+      },
+      {
+        "balance": 23391.059999999998,
+        "minEquity": 23391.94,
+        "maxEquity": 25335.94,
+        "timestamp": 1739278602711
+      },
+      {
+        "balance": 22245.35,
+        "minEquity": 22246.17,
+        "maxEquity": 24879.17,
+        "timestamp": 1739554986688
+      },
+      {
+        "balance": 20688.64,
+        "minEquity": 20689.399999999998,
+        "maxEquity": 24484.75,
+        "timestamp": 1740643873331
+      },
+      {
+        "balance": 23062.37,
+        "minEquity": 20248.85,
+        "maxEquity": 23063.29,
+        "timestamp": 1741801580835
+      },
+      {
+        "balance": 25809.84,
+        "minEquity": 22660.969999999998,
+        "maxEquity": 25810.92,
+        "timestamp": 1741944009575
+      },
+      {
+        "balance": 28527.05,
+        "minEquity": 25258.46,
+        "maxEquity": 28528.31,
+        "timestamp": 1742409744017
+      },
+      {
+        "balance": 27368.47,
+        "minEquity": 27369.649999999998,
+        "maxEquity": 28799.649999999998,
+        "timestamp": 1742466613750
+      },
+      {
+        "balance": 30002.39,
+        "minEquity": 26247,
+        "maxEquity": 30003.75,
+        "timestamp": 1743372122238
+      },
+      {
+        "balance": 32886.4,
+        "minEquity": 29461.989999999998,
+        "maxEquity": 32875.94,
+        "timestamp": 1743478385498
+      },
+      {
+        "balance": 31682.08,
+        "minEquity": 31683.56,
+        "maxEquity": 33397.560000000005,
+        "timestamp": 1743524235651
+      },
+      {
+        "balance": 30493.22,
+        "minEquity": 30494.640000000003,
+        "maxEquity": 32927.14,
+        "timestamp": 1743661835010
+      },
+      {
+        "balance": 33357.48,
+        "minEquity": 30086.58,
+        "maxEquity": 33359.08,
+        "timestamp": 1744208222019
+      },
+      {
+        "balance": 36295,
+        "minEquity": 32286.780000000002,
+        "maxEquity": 36276.280000000006,
+        "timestamp": 1744297422204
+      },
+      {
+        "balance": 35057.84,
+        "minEquity": 35059.54,
+        "maxEquity": 36299.54,
+        "timestamp": 1744617942920
+      },
+      {
+        "balance": 38121.46,
+        "minEquity": 35034.84,
+        "maxEquity": 38123.34,
+        "timestamp": 1744786907092
+      },
+      {
+        "balance": 36856,
+        "minEquity": 36857.82,
+        "maxEquity": 38833.32,
+        "timestamp": 1744874202650
+      },
+      {
+        "balance": 40037.24,
+        "minEquity": 36830.74,
+        "maxEquity": 40039.24,
+        "timestamp": 1745240514604
+      },
+      {
+        "balance": 43309.259999999995,
+        "minEquity": 39417.939999999995,
+        "maxEquity": 43311.439999999995,
+        "timestamp": 1745302471295
+      },
+      {
+        "balance": 42035.24,
+        "minEquity": 42037.34,
+        "maxEquity": 43448.34,
+        "timestamp": 1745552472111
+      },
+      {
+        "balance": 45138.74,
+        "minEquity": 41173.02,
+        "maxEquity": 45141.02,
+        "timestamp": 1746473125037
+      },
+      {
+        "balance": 48314.04,
+        "minEquity": 45122.5,
+        "maxEquity": 48316.5,
+        "timestamp": 1746548586186
+      },
+      {
+        "balance": 47076.4,
+        "minEquity": 47078.78,
+        "maxEquity": 48878.78,
+        "timestamp": 1747360170105
+      },
+      {
+        "balance": 50129.41,
+        "minEquity": 46221.54,
+        "maxEquity": 50131.99,
+        "timestamp": 1747789256451
+      },
+      {
+        "balance": 53093.130000000005,
+        "minEquity": 49167.96000000001,
+        "maxEquity": 53095.91,
+        "timestamp": 1748003824631
+      },
+      {
+        "balance": 51616.57000000001,
+        "minEquity": 51619.270000000004,
+        "maxEquity": 54099.37,
+        "timestamp": 1748324772033
+      },
+      {
+        "balance": 50290.12000000001,
+        "minEquity": 50292.740000000005,
+        "maxEquity": 51877.29000000001,
+        "timestamp": 1748571690471
+      },
+      {
+        "balance": 53412.41000000001,
+        "minEquity": 50252.69000000001,
+        "maxEquity": 53415.23000000001,
+        "timestamp": 1748902280620
+      },
+      {
+        "balance": 52129.33000000001,
+        "minEquity": 52132.09000000001,
+        "maxEquity": 53449.59000000001,
+        "timestamp": 1748928920057
+      },
+      {
+        "balance": 50846.25000000001,
+        "minEquity": 50848.93000000001,
+        "maxEquity": 53057.43000000001,
+        "timestamp": 1749137486113
+      },
+      {
+        "balance": 53811.80000000001,
+        "minEquity": 49655.36000000001,
+        "maxEquity": 53814.66,
+        "timestamp": 1749772997756
+      },
+      {
+        "balance": 52490.54000000001,
+        "minEquity": 52493.32000000001,
+        "maxEquity": 54019.82000000001,
+        "timestamp": 1750052450156
+      },
+      {
+        "balance": 51202.94000000001,
+        "minEquity": 51205.64000000001,
+        "maxEquity": 52679.64000000001,
+        "timestamp": 1750637406548
+      },
+      {
+        "balance": 49886.35000000001,
+        "minEquity": 49888.97000000001,
+        "maxEquity": 52136.02000000001,
+        "timestamp": 1750720714911
+      },
+      {
+        "balance": 48607.41000000001,
+        "minEquity": 48609.95000000001,
+        "maxEquity": 50527.45000000001,
+        "timestamp": 1750944930909
+      },
+      {
+        "balance": 47027.15000000001,
+        "minEquity": 47029.63000000001,
+        "maxEquity": 51243.33000000001,
+        "timestamp": 1752049250565
+      },
+      {
+        "balance": 49820.56000000001,
+        "minEquity": 46379.32000000001,
+        "maxEquity": 49885.97000000001,
+        "timestamp": 1753100553191
+      },
+      {
+        "balance": 48323.720000000016,
+        "minEquity": 48326.320000000014,
+        "maxEquity": 51631.970000000016,
+        "timestamp": 1753326528680
+      },
+      {
+        "balance": 51426.53000000001,
+        "minEquity": 48166.12000000002,
+        "maxEquity": 51429.330000000016,
+        "timestamp": 1754314320428
+      },
+      {
+        "balance": 50070.400000000016,
+        "minEquity": 50073.12000000001,
+        "maxEquity": 51662.17000000001,
+        "timestamp": 1754473809228
+      },
+      {
+        "balance": 48699.220000000016,
+        "minEquity": 48701.860000000015,
+        "maxEquity": 51117.91000000002,
+        "timestamp": 1754896206539
+      },
+      {
+        "balance": 47286.570000000014,
+        "minEquity": 47289.13000000002,
+        "maxEquity": 49341.13000000002,
+        "timestamp": 1755188000324
+      },
+      {
+        "balance": 45961.040000000015,
+        "minEquity": 45963.540000000015,
+        "maxEquity": 47753.59000000001,
+        "timestamp": 1755614823322
+      },
+      {
+        "balance": 48728.820000000014,
+        "minEquity": 44594.30000000002,
+        "maxEquity": 48731.500000000015,
+        "timestamp": 1756389094695
+      },
+      {
+        "balance": 51931.31000000001,
+        "minEquity": 48331.000000000015,
+        "maxEquity": 51934.19000000002,
+        "timestamp": 1756708595918
+      },
+      {
+        "balance": 55198.08000000001,
+        "minEquity": 50898.710000000014,
+        "maxEquity": 55201.16000000001,
+        "timestamp": 1756905293318
+      },
+      {
+        "balance": 58541.63000000001,
+        "minEquity": 55087.96000000001,
+        "maxEquity": 58544.91000000001,
+        "timestamp": 1757339186269
+      },
+      {
+        "balance": 57002.070000000014,
+        "minEquity": 57005.27000000001,
+        "maxEquity": 59937.97000000001,
+        "timestamp": 1757582052572
+      },
+      {
+        "balance": 60137.51000000002,
+        "minEquity": 55821.28000000001,
+        "maxEquity": 60140.930000000015,
+        "timestamp": 1758523696189
+      },
+      {
+        "balance": 58678.30000000002,
+        "minEquity": 58681.640000000014,
+        "maxEquity": 62236.19000000002,
+        "timestamp": 1758740742020
+      },
+      {
+        "balance": 62204.250000000015,
+        "minEquity": 58190.860000000015,
+        "maxEquity": 62207.81000000002,
+        "timestamp": 1759162569795
+      },
+      {
+        "balance": 60750.330000000016,
+        "minEquity": 60753.81000000001,
+        "maxEquity": 64061.31000000001,
+        "timestamp": 1759223531596
+      },
+      {
+        "balance": 59165.140000000014,
+        "minEquity": 59168.540000000015,
+        "maxEquity": 61905.69000000002,
+        "timestamp": 1759416005781
+      },
+      {
+        "balance": 62905.74000000001,
+        "minEquity": 58780.360000000015,
+        "maxEquity": 62909.360000000015,
+        "timestamp": 1759766788866
+      },
+      {
+        "balance": 66625.55000000002,
+        "minEquity": 61420.94000000001,
+        "maxEquity": 66629.39000000001,
+        "timestamp": 1759917202923
+      },
+      {
+        "balance": 70453.73000000001,
+        "minEquity": 65652.31000000001,
+        "maxEquity": 70457.81000000001,
+        "timestamp": 1760367188594
+      },
+      {
+        "balance": 74317.1,
+        "minEquity": 69098.45000000001,
+        "maxEquity": 74321.40000000001,
+        "timestamp": 1760510799596
+      },
+      {
+        "balance": 78157.67000000001,
+        "minEquity": 74141.86,
+        "maxEquity": 78162.21,
+        "timestamp": 1760623540591
+      },
+      {
+        "balance": 76481.27000000002,
+        "minEquity": 76485.71,
+        "maxEquity": 80534.71,
+        "timestamp": 1760665397138
+      },
+      {
+        "balance": 74824.87000000002,
+        "minEquity": 74829.21000000002,
+        "maxEquity": 78854.71000000002,
+        "timestamp": 1760702163804
+      },
+      {
+        "balance": 73150.83000000003,
+        "minEquity": 73155.07000000002,
+        "maxEquity": 74861.57000000002,
+        "timestamp": 1760991544909
+      },
+      {
+        "balance": 71630.37000000002,
+        "minEquity": 71634.51000000002,
+        "maxEquity": 73662.51000000002,
+        "timestamp": 1761753115991
+      },
+      {
+        "balance": 70087.87000000002,
+        "minEquity": 70091.93000000002,
+        "maxEquity": 72571.93000000002,
+        "timestamp": 1761880402627
+      },
+      {
+        "balance": 68563.87000000002,
+        "minEquity": 68567.85000000002,
+        "maxEquity": 70519.85000000002,
+        "timestamp": 1761927007355
+      },
+      {
+        "balance": 72264.07000000002,
+        "minEquity": 67307.87000000002,
+        "maxEquity": 72268.27000000002,
+        "timestamp": 1762753873946
+      },
+      {
+        "balance": 76126.94000000002,
+        "minEquity": 71271.93000000002,
+        "maxEquity": 76131.38000000002,
+        "timestamp": 1762965229080
+      },
+      {
+        "balance": 74529.90000000002,
+        "minEquity": 74534.24000000002,
+        "maxEquity": 77728.24000000002,
+        "timestamp": 1763058681473
+      },
+      {
+        "balance": 72829.59000000003,
+        "minEquity": 72833.85000000002,
+        "maxEquity": 77010.00000000003,
+        "timestamp": 1763605036720
+      },
+      {
+        "balance": 76473.25000000003,
+        "minEquity": 72713.70000000003,
+        "maxEquity": 76477.75000000003,
+        "timestamp": 1764290088330
+      },
+      {
+        "balance": 80386.96000000004,
+        "minEquity": 75723.23000000003,
+        "maxEquity": 80391.68000000002,
+        "timestamp": 1764554152585
+      },
+      {
+        "balance": 78532.79000000004,
+        "minEquity": 78537.45000000004,
+        "maxEquity": 82243.50000000003,
+        "timestamp": 1764637789437
+      },
+      {
+        "balance": 76902.17000000004,
+        "minEquity": 76906.75000000004,
+        "maxEquity": 78797.75000000004,
+        "timestamp": 1764780902203
+      },
+      {
+        "balance": 75261.56000000004,
+        "minEquity": 75266.04000000004,
+        "maxEquity": 78879.59000000004,
+        "timestamp": 1765206241645
+      },
+      {
+        "balance": 73579.45000000004,
+        "minEquity": 73583.83000000005,
+        "maxEquity": 75364.38000000005,
+        "timestamp": 1765395663048
+      },
+      {
+        "balance": 77418.83000000005,
+        "minEquity": 72488.02000000005,
+        "maxEquity": 77419.47000000004,
+        "timestamp": 1765529089190
+      },
+      {
+        "balance": 81241.43000000005,
+        "minEquity": 75965.11000000004,
+        "maxEquity": 81246.31000000004,
+        "timestamp": 1766074551507
+      },
+      {
+        "balance": 85368.61000000004,
+        "minEquity": 81006.01000000005,
+        "maxEquity": 85373.73000000005,
+        "timestamp": 1766420351982
+      },
+      {
+        "balance": 89383.26000000004,
+        "minEquity": 84412.89000000004,
+        "maxEquity": 89343.64000000004,
+        "timestamp": 1766763047388
+      },
+      {
+        "balance": 87631.23000000004,
+        "minEquity": 87636.51000000004,
+        "maxEquity": 90507.51000000004,
+        "timestamp": 1766967956978
+      },
+      {
+        "balance": 87631.23000000004,
+        "minEquity": 87596.46000000004,
+        "maxEquity": 87636.51000000004,
+        "timestamp": 1767311997575
+      }
+    ],
+    "maxBalanceDrawdownPercent": 15.536713937644112,
+    "maxEquityDrawdownPercent": 21.709291328200734,
+    "maxBalanceDrawdownAbsolute": 9593.799999999988,
+    "maxEquityDrawdownAbsolute": 13226.839999999982
+  },
+  "tradeStatistics": {
+    "netProfit": {
+      "all": 77631.23,
+      "long": 77631.23,
+      "short": 0
+    },
+    "profitFactor": {
+      "all": 2.32,
+      "long": 2.32,
+      "short": 0
+    },
+    "commissions": {
+      "all": -897.72,
+      "long": -897.72,
+      "short": 0
+    },
+    "swaps": {
+      "all": -6848.55,
+      "long": -6848.55,
+      "short": 0
+    },
+    "totalTrades": {
+      "all": 84,
+      "long": 84,
+      "short": 0
+    },
+    "winningTrades": {
+      "all": 43,
+      "long": 43,
+      "short": 0
+    },
+    "maxConsecutiveWinningTrades": {
+      "all": 6,
+      "long": 6,
+      "short": 0
+    },
+    "largestWinningTrade": {
+      "all": 4127.18,
+      "long": 4127.18,
+      "short": 0
+    },
+    "losingTrades": {
+      "all": 41,
+      "long": 41,
+      "short": 0
+    },
+    "maxConsecutiveLosingTrades": {
+      "all": 6,
+      "long": 6,
+      "short": 0
+    },
+    "largestLosingTrade": {
+      "all": -1854.17,
+      "long": -1854.17,
+      "short": 0
+    },
+    "averageTrade": {
+      "all": 924.18,
+      "long": 924.18,
+      "short": 0
+    }
+  },
+  "parameters": [
+    {
+      "group": null,
+      "displayName": "Risk Unit",
+      "propertyName": "RiskUnitType",
+      "value": "Percentage"
+    },
+    {
+      "group": null,
+      "displayName": "Take Profit",
+      "propertyName": "TakeProfit",
+      "value": 1.9
+    },
+    {
+      "group": null,
+      "displayName": "Stop Loss",
+      "propertyName": "StopLoss",
+      "value": 0.75
+    },
+    {
+      "group": null,
+      "displayName": "Volume (lots)",
+      "propertyName": "Volume",
+      "value": 0.5
+    },
+    {
+      "group": "Version 2.0",
+      "displayName": "",
+      "propertyName": "Brand",
+      "value": "AlgoQ"
+    }
+  ],
+  "usedSymbols": [
+    {
+      "symbol": "XAUUSD",
+      "period": "m1",
+      "swapTime": "22:00",
+      "baseAsset": "XAU",
+      "baseAssetDigits": 2,
+      "quoteAsset": "USD",
+      "quoteAssetDigits": 2,
+      "commissions": {
+        "type": "usdPerMillionUsdVolume",
+        "value": 30,
+        "applyCommissionAutomatically": false
+      },
+      "swapLong": -8.01,
+      "swapShort": 3.939,
+      "threeDaySwaps": "wednesday",
+      "weekendSwaps": false,
+      "swapPeriods": 24,
+      "gracePeriods": 0,
+      "digits": 2,
+      "lotSize": 100,
+      "stepVolume": 1,
+      "pipPosition": 1,
+      "swapCalculationType": "pips"
+    }
+  ],
+  "positions": {
+    "columns": [
+      "id",
+      "symbol",
+      "quantity",
+      "volume",
+      "direction",
+      "entryPrice",
+      "tp",
+      "sl",
+      "commissions",
+      "closingCommissions",
+      "swaps",
+      "created",
+      "label",
+      "comment",
+      "pips",
+      "gross",
+      "net"
+    ],
+    "items": [],
+    "marginUsed": 0,
+    "freeMargin": 87636.51000000004,
+    "marginLevel": null,
+    "unrealizedNet": 5.280000000000001,
+    "unrealizedGross": 0
+  },
+  "orders": {
+    "columns": [
+      "id",
+      "direction",
+      "orderType",
+      "created",
+      "symbol",
+      "quantity",
+      "volume",
+      "submittedPrice",
+      "distance",
+      "tp",
+      "sl"
+    ],
+    "items": []
+  },
+  "history": {
+    "columns": [
+      "id",
+      "label",
+      "entryTime",
+      "symbol",
+      "quantity",
+      "volume",
+      "direction",
+      "entryPrice",
+      "commissions",
+      "swaps",
+      "closePrice",
+      "closeTime",
+      "net",
+      "pips",
+      "gross"
+    ],
+    "items": [
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 2,
+        "net": 2214.11,
+        "gross": 2502.5,
+        "entryTime": 1735778835738,
+        "closeTime": 1736429841661,
+        "entryPrice": 2627.73,
+        "closePrice": 2677.78,
+        "commissions": -8.04,
+        "swaps": -280.35,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 12214.11,
+        "quantity": 0.5,
+        "pips": 500.49999999999994
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 4,
+        "net": 2253.9900000000002,
+        "gross": 2542.5,
+        "entryTime": 1736432583134,
+        "closeTime": 1737045402670,
+        "entryPrice": 2670.17,
+        "closePrice": 2721.02,
+        "commissions": -8.16,
+        "swaps": -280.35,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 14468.1,
+        "quantity": 0.5,
+        "pips": 508.5
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 6,
+        "net": 2371.95,
+        "gross": 2580.5,
+        "entryTime": 1737423671008,
+        "closeTime": 1737684041351,
+        "entryPrice": 2713.92,
+        "closePrice": 2765.53,
+        "commissions": -8.3,
+        "swaps": -200.25,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 16840.05,
+        "quantity": 0.5,
+        "pips": 516.0999999999999
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 8,
+        "net": 2423.29,
+        "gross": 2632,
+        "entryTime": 1738112502090,
+        "closeTime": 1738593391856,
+        "entryPrice": 2765.25,
+        "closePrice": 2817.89,
+        "commissions": -8.46,
+        "swaps": -200.25,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 19263.34,
+        "quantity": 0.5,
+        "pips": 526.4
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 10,
+        "net": 2588.28,
+        "gross": 2677,
+        "entryTime": 1738593430499,
+        "closeTime": 1738748545769,
+        "entryPrice": 2817.32,
+        "closePrice": 2870.86,
+        "commissions": -8.62,
+        "swaps": -80.1,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 21851.62,
+        "quantity": 0.5,
+        "pips": 535.4
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 12,
+        "net": 2642.62,
+        "gross": 2731.5,
+        "entryTime": 1738938418715,
+        "closeTime": 1739236302948,
+        "entryPrice": 2873.38,
+        "closePrice": 2928.01,
+        "commissions": -8.78,
+        "swaps": -80.1,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 24494.239999999998,
+        "quantity": 0.5,
+        "pips": 546.3
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 14,
+        "net": -1103.18,
+        "gross": -1094.5,
+        "entryTime": 1739241634287,
+        "closeTime": 1739278602711,
+        "entryPrice": 2912.29,
+        "closePrice": 2890.4,
+        "commissions": -8.68,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 23391.059999999998,
+        "quantity": 0.5,
+        "pips": -218.9
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 16,
+        "net": -1145.71,
+        "gross": -1097,
+        "entryTime": 1739416556883,
+        "closeTime": 1739554986688,
+        "entryPrice": 2909.29,
+        "closePrice": 2887.35,
+        "commissions": -8.66,
+        "swaps": -40.05,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 22245.35,
+        "quantity": 0.5,
+        "pips": -219.4
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 18,
+        "net": -1556.71,
+        "gross": -1107.5,
+        "entryTime": 1739847763037,
+        "closeTime": 1740643873331,
+        "entryPrice": 2906.74,
+        "closePrice": 2884.59,
+        "commissions": -8.66,
+        "swaps": -440.55000000000007,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 20688.64,
+        "quantity": 0.5,
+        "pips": -221.49999999999997
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 20,
+        "net": 2373.7299999999996,
+        "gross": 2743,
+        "entryTime": 1741015292650,
+        "closeTime": 1741801580835,
+        "entryPrice": 2885.3,
+        "closePrice": 2940.16,
+        "commissions": -8.82,
+        "swaps": -360.45000000000005,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 23062.37,
+        "quantity": 0.5,
+        "pips": 548.5999999999999
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 22,
+        "net": 2747.47,
+        "gross": 2796.5,
+        "entryTime": 1741827738657,
+        "closeTime": 1741944009575,
+        "entryPrice": 2940.72,
+        "closePrice": 2996.65,
+        "commissions": -8.98,
+        "swaps": -40.05,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 25809.84,
+        "quantity": 0.5,
+        "pips": 559.3
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 24,
+        "net": 2717.21,
+        "gross": 2846.5,
+        "entryTime": 1741948846107,
+        "closeTime": 1742409744017,
+        "entryPrice": 2989.27,
+        "closePrice": 3046.2,
+        "commissions": -9.14,
+        "swaps": -120.14999999999999,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 28527.05,
+        "quantity": 0.5,
+        "pips": 569.3
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 26,
+        "net": -1158.58,
+        "gross": -1149.5,
+        "entryTime": 1742428996005,
+        "closeTime": 1742466613750,
+        "entryPrice": 3051.96,
+        "closePrice": 3028.97,
+        "commissions": -9.08,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 27368.47,
+        "quantity": 0.5,
+        "pips": -229.89999999999998
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 28,
+        "net": 2633.9199999999996,
+        "gross": 2883.5,
+        "entryTime": 1742911417009,
+        "closeTime": 1743372122238,
+        "entryPrice": 3033.7,
+        "closePrice": 3091.37,
+        "commissions": -9.28,
+        "swaps": -240.3,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 30002.39,
+        "quantity": 0.5,
+        "pips": 576.6999999999999
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 30,
+        "net": 2884.0099999999998,
+        "gross": 2933.5,
+        "entryTime": 1743379399285,
+        "closeTime": 1743478385498,
+        "entryPrice": 3087,
+        "closePrice": 3145.67,
+        "commissions": -9.44,
+        "swaps": -40.05,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 32886.4,
+        "quantity": 0.5,
+        "pips": 586.6999999999999
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 32,
+        "net": -1204.32,
+        "gross": -1195,
+        "entryTime": 1743487328881,
+        "closeTime": 1743524235651,
+        "entryPrice": 3128.47,
+        "closePrice": 3104.57,
+        "commissions": -9.32,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 31682.08,
+        "quantity": 0.5,
+        "pips": -238.99999999999997
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 34,
+        "net": -1188.86,
+        "gross": -1179.5,
+        "entryTime": 1743631203933,
+        "closeTime": 1743661835010,
+        "entryPrice": 3142.66,
+        "closePrice": 3119.07,
+        "commissions": -9.36,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 30493.22,
+        "quantity": 0.5,
+        "pips": -235.89999999999998
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 36,
+        "net": 2864.26,
+        "gross": 2873.5,
+        "entryTime": 1744178878494,
+        "closeTime": 1744208222019,
+        "entryPrice": 3023.19,
+        "closePrice": 3080.66,
+        "commissions": -9.24,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 33357.48,
+        "quantity": 0.5,
+        "pips": 574.6999999999999
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 38,
+        "net": 2937.52,
+        "gross": 2947,
+        "entryTime": 1744245136899,
+        "closeTime": 1744297422204,
+        "entryPrice": 3099.8,
+        "closePrice": 3158.74,
+        "commissions": -9.48,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 36295,
+        "quantity": 0.5,
+        "pips": 589.4
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 40,
+        "net": -1237.16,
+        "gross": -1227.5,
+        "entryTime": 1744596610288,
+        "closeTime": 1744617942920,
+        "entryPrice": 3245.51,
+        "closePrice": 3220.96,
+        "commissions": -9.66,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 35057.84,
+        "quantity": 0.5,
+        "pips": -245.5
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 42,
+        "net": 3063.62,
+        "gross": 3073.5,
+        "entryTime": 1744756099705,
+        "closeTime": 1744786907092,
+        "entryPrice": 3233.76,
+        "closePrice": 3295.23,
+        "commissions": -9.88,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 38121.46,
+        "quantity": 0.5,
+        "pips": 614.6999999999999
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 44,
+        "net": -1265.46,
+        "gross": -1255.5,
+        "entryTime": 1744840802154,
+        "closeTime": 1744874202650,
+        "entryPrice": 3343.33,
+        "closePrice": 3318.22,
+        "commissions": -9.96,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 36856,
+        "quantity": 0.5,
+        "pips": -251.1
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 46,
+        "net": 3181.24,
+        "gross": 3191.5,
+        "entryTime": 1745195597424,
+        "closeTime": 1745240514604,
+        "entryPrice": 3357.86,
+        "closePrice": 3421.69,
+        "commissions": -10.26,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 40037.24,
+        "quantity": 0.5,
+        "pips": 638.3
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 48,
+        "net": 3272.02,
+        "gross": 3282.5,
+        "entryTime": 1745281257288,
+        "closeTime": 1745302471295,
+        "entryPrice": 3430.78,
+        "closePrice": 3496.43,
+        "commissions": -10.48,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 43309.259999999995,
+        "quantity": 0.5,
+        "pips": 656.5
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 50,
+        "net": -1274.02,
+        "gross": -1264,
+        "entryTime": 1745533806676,
+        "closeTime": 1745552472111,
+        "entryPrice": 3367.81,
+        "closePrice": 3342.53,
+        "commissions": -10.02,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 42035.24,
+        "quantity": 0.5,
+        "pips": -252.8
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 52,
+        "net": 3103.5,
+        "gross": 3113.5,
+        "entryTime": 1746408707829,
+        "closeTime": 1746473125037,
+        "entryPrice": 3270.16,
+        "closePrice": 3332.43,
+        "commissions": -10,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 45138.74,
+        "quantity": 0.5,
+        "pips": 622.7
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 54,
+        "net": 3175.3,
+        "gross": 3185.5,
+        "entryTime": 1746493270761,
+        "closeTime": 1746548586186,
+        "entryPrice": 3337.83,
+        "closePrice": 3401.54,
+        "commissions": -10.2,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 48314.04,
+        "quantity": 0.5,
+        "pips": 637.1
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 56,
+        "net": -1237.64,
+        "gross": -1228,
+        "entryTime": 1747346405486,
+        "closeTime": 1747360170105,
+        "entryPrice": 3240.78,
+        "closePrice": 3216.22,
+        "commissions": -9.64,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 47076.4,
+        "quantity": 0.5,
+        "pips": -245.59999999999997
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 58,
+        "net": 3053.0099999999998,
+        "gross": 3103,
+        "entryTime": 1747744544305,
+        "closeTime": 1747789256451,
+        "entryPrice": 3249.93,
+        "closePrice": 3311.99,
+        "commissions": -9.94,
+        "swaps": -40.05,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 50129.41,
+        "quantity": 0.5,
+        "pips": 620.6
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 60,
+        "net": 2963.7200000000003,
+        "gross": 3134,
+        "entryTime": 1747790245150,
+        "closeTime": 1748003824631,
+        "entryPrice": 3295.83,
+        "closePrice": 3358.51,
+        "commissions": -10.08,
+        "swaps": -160.2,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 53093.130000000005,
+        "quantity": 0.5,
+        "pips": 626.8
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 62,
+        "net": -1476.56,
+        "gross": -1386.5,
+        "entryTime": 1748007176439,
+        "closeTime": 1748324772033,
+        "entryPrice": 3345.71,
+        "closePrice": 3317.98,
+        "commissions": -9.96,
+        "swaps": -80.1,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 51616.57000000001,
+        "quantity": 0.5,
+        "pips": -277.3
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 64,
+        "net": -1326.45,
+        "gross": -1276.5,
+        "entryTime": 1748534685204,
+        "closeTime": 1748571690471,
+        "entryPrice": 3325.8,
+        "closePrice": 3300.27,
+        "commissions": -9.9,
+        "swaps": -40.05,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 50290.12000000001,
+        "quantity": 0.5,
+        "pips": -255.3
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 66,
+        "net": 3122.29,
+        "gross": 3172.5,
+        "entryTime": 1748843067394,
+        "closeTime": 1748902280620,
+        "entryPrice": 3322.91,
+        "closePrice": 3386.36,
+        "commissions": -10.16,
+        "swaps": -40.05,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 53412.41000000001,
+        "quantity": 0.5,
+        "pips": 634.5
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 68,
+        "net": -1283.08,
+        "gross": -1273,
+        "entryTime": 1748909140485,
+        "closeTime": 1748928920057,
+        "entryPrice": 3383.06,
+        "closePrice": 3357.6,
+        "commissions": -10.08,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 52129.33000000001,
+        "quantity": 0.5,
+        "pips": -254.6
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 70,
+        "net": -1283.08,
+        "gross": -1273,
+        "entryTime": 1749115533463,
+        "closeTime": 1749137486113,
+        "entryPrice": 3384.81,
+        "closePrice": 3359.35,
+        "commissions": -10.08,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 50846.25000000001,
+        "quantity": 0.5,
+        "pips": -254.6
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 72,
+        "net": 2965.55,
+        "gross": 3176,
+        "entryTime": 1749553958503,
+        "closeTime": 1749772997756,
+        "entryPrice": 3338.38,
+        "closePrice": 3401.9,
+        "commissions": -10.2,
+        "swaps": -200.25,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 53811.80000000001,
+        "quantity": 0.5,
+        "pips": 635.2
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 74,
+        "net": -1321.26,
+        "gross": -1311,
+        "entryTime": 1750025411523,
+        "closeTime": 1750052450156,
+        "entryPrice": 3446.86,
+        "closePrice": 3420.64,
+        "commissions": -10.26,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 52490.54000000001,
+        "quantity": 0.5,
+        "pips": -262.2
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 76,
+        "net": -1287.6,
+        "gross": -1277.5,
+        "entryTime": 1750629609570,
+        "closeTime": 1750637406548,
+        "entryPrice": 3393.4,
+        "closePrice": 3367.85,
+        "commissions": -10.1,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 51202.94000000001,
+        "quantity": 0.5,
+        "pips": -255.5
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 78,
+        "net": -1316.59,
+        "gross": -1266.5,
+        "entryTime": 1750677173942,
+        "closeTime": 1750720714911,
+        "entryPrice": 3374.64,
+        "closePrice": 3349.31,
+        "commissions": -10.04,
+        "swaps": -40.05,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 49886.35000000001,
+        "quantity": 0.5,
+        "pips": -253.29999999999998
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 80,
+        "net": -1278.94,
+        "gross": -1269,
+        "entryTime": 1750893146869,
+        "closeTime": 1750944930909,
+        "entryPrice": 3337.34,
+        "closePrice": 3311.96,
+        "commissions": -9.94,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 48607.41000000001,
+        "quantity": 0.5,
+        "pips": -253.79999999999998
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 82,
+        "net": -1580.26,
+        "gross": -1250,
+        "entryTime": 1751323542413,
+        "closeTime": 1752049250565,
+        "entryPrice": 3309.67,
+        "closePrice": 3284.67,
+        "commissions": -9.86,
+        "swaps": -320.40000000000003,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 47027.15000000001,
+        "quantity": 0.5,
+        "pips": -250
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 84,
+        "net": 2793.41,
+        "gross": 3164,
+        "entryTime": 1752098910114,
+        "closeTime": 1753100553191,
+        "entryPrice": 3317.01,
+        "closePrice": 3380.29,
+        "commissions": -10.14,
+        "swaps": -360.45000000000005,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 49820.56000000001,
+        "quantity": 0.5,
+        "pips": 632.8
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 86,
+        "net": -1496.8400000000001,
+        "gross": -1326.5,
+        "entryTime": 1753140362762,
+        "closeTime": 1753326528680,
+        "entryPrice": 3401.61,
+        "closePrice": 3375.08,
+        "commissions": -10.14,
+        "swaps": -160.2,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 48323.720000000016,
+        "quantity": 0.5,
+        "pips": -265.3
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 88,
+        "net": 3102.81,
+        "gross": 3153,
+        "entryTime": 1754051462291,
+        "closeTime": 1754314320428,
+        "entryPrice": 3314.98,
+        "closePrice": 3378.04,
+        "commissions": -10.14,
+        "swaps": -40.05,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 51426.53000000001,
+        "quantity": 0.5,
+        "pips": 630.6
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 90,
+        "net": -1356.1299999999999,
+        "gross": -1306,
+        "entryTime": 1754405642795,
+        "closeTime": 1754473809228,
+        "entryPrice": 3385.63,
+        "closePrice": 3359.51,
+        "commissions": -10.08,
+        "swaps": -40.05,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 50070.400000000016,
+        "quantity": 0.5,
+        "pips": -261.2
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 92,
+        "net": -1371.1799999999998,
+        "gross": -1281,
+        "entryTime": 1754548967515,
+        "closeTime": 1754896206539,
+        "entryPrice": 3385.48,
+        "closePrice": 3359.86,
+        "commissions": -10.08,
+        "swaps": -80.1,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 48699.220000000016,
+        "quantity": 0.5,
+        "pips": -256.2
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 94,
+        "net": -1412.65,
+        "gross": -1282.5,
+        "entryTime": 1755069192799,
+        "closeTime": 1755188000324,
+        "entryPrice": 3359.31,
+        "closePrice": 3333.66,
+        "commissions": -10,
+        "swaps": -120.15,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 47286.570000000014,
+        "quantity": 0.5,
+        "pips": -256.49999999999994
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 96,
+        "net": -1325.53,
+        "gross": -1275.5,
+        "entryTime": 1755488710746,
+        "closeTime": 1755614823322,
+        "entryPrice": 3348.89,
+        "closePrice": 3323.38,
+        "commissions": -9.98,
+        "swaps": -40.05,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 45961.040000000015,
+        "quantity": 0.5,
+        "pips": -255.1
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 98,
+        "net": 2767.78,
+        "gross": 3178.5,
+        "entryTime": 1755697454936,
+        "closeTime": 1756389094695,
+        "entryPrice": 3345.46,
+        "closePrice": 3409.03,
+        "commissions": -10.22,
+        "swaps": -400.5,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 48728.820000000014,
+        "quantity": 0.5,
+        "pips": 635.6999999999999
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 100,
+        "net": 3202.49,
+        "gross": 3253,
+        "entryTime": 1756474704731,
+        "closeTime": 1756708595918,
+        "entryPrice": 3423.32,
+        "closePrice": 3488.38,
+        "commissions": -10.46,
+        "swaps": -40.05,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 51931.31000000001,
+        "quantity": 0.5,
+        "pips": 650.6
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 102,
+        "net": 3266.77,
+        "gross": 3317.5,
+        "entryTime": 1756775797357,
+        "closeTime": 1756905293318,
+        "entryPrice": 3490.67,
+        "closePrice": 3557.02,
+        "commissions": -10.68,
+        "swaps": -40.05,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 55198.08000000001,
+        "quantity": 0.5,
+        "pips": 663.4999999999999
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 104,
+        "net": 3343.5499999999997,
+        "gross": 3394.5,
+        "entryTime": 1757075402043,
+        "closeTime": 1757339186269,
+        "entryPrice": 3566.43,
+        "closePrice": 3634.32,
+        "commissions": -10.9,
+        "swaps": -40.05,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 58541.63000000001,
+        "quantity": 0.5,
+        "pips": 678.9
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 106,
+        "net": -1539.56,
+        "gross": -1368.5,
+        "entryTime": 1757381759244,
+        "closeTime": 1757582052572,
+        "entryPrice": 3646.77,
+        "closePrice": 3619.4,
+        "commissions": -10.86,
+        "swaps": -160.2,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 57002.070000000014,
+        "quantity": 0.5,
+        "pips": -273.7
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 108,
+        "net": 3135.44,
+        "gross": 3467,
+        "entryTime": 1757642940550,
+        "closeTime": 1758523696189,
+        "entryPrice": 3649.17,
+        "closePrice": 3718.51,
+        "commissions": -11.16,
+        "swaps": -320.40000000000003,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 60137.51000000002,
+        "quantity": 0.5,
+        "pips": 693.4
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 110,
+        "net": -1459.21,
+        "gross": -1408,
+        "entryTime": 1758583346240,
+        "closeTime": 1758740742020,
+        "entryPrice": 3749.01,
+        "closePrice": 3720.85,
+        "commissions": -11.16,
+        "swaps": -40.05,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 58678.30000000002,
+        "quantity": 0.5,
+        "pips": -281.59999999999997
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 112,
+        "net": 3525.95,
+        "gross": 3577.5,
+        "entryTime": 1758892134752,
+        "closeTime": 1759162569795,
+        "entryPrice": 3761.82,
+        "closePrice": 3833.37,
+        "commissions": -11.5,
+        "swaps": -40.05,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 62204.250000000015,
+        "quantity": 0.5,
+        "pips": 715.4999999999999
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 114,
+        "net": -1453.92,
+        "gross": -1442.5,
+        "entryTime": 1759190694431,
+        "closeTime": 1759223531596,
+        "entryPrice": 3834.44,
+        "closePrice": 3805.59,
+        "commissions": -11.42,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 60750.330000000016,
+        "quantity": 0.5,
+        "pips": -288.5
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 116,
+        "net": -1585.19,
+        "gross": -1453.5,
+        "entryTime": 1759284300374,
+        "closeTime": 1759416005781,
+        "entryPrice": 3872.12,
+        "closePrice": 3843.05,
+        "commissions": -11.54,
+        "swaps": -120.15,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 59165.140000000014,
+        "quantity": 0.5,
+        "pips": -290.7
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 118,
+        "net": 3740.6,
+        "gross": 3752.5,
+        "entryTime": 1759701871514,
+        "closeTime": 1759766788866,
+        "entryPrice": 3891.88,
+        "closePrice": 3966.93,
+        "commissions": -11.9,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 62905.74000000001,
+        "quantity": 0.5,
+        "pips": 750.4999999999999
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 120,
+        "net": 3719.81,
+        "gross": 3772,
+        "entryTime": 1759788693103,
+        "closeTime": 1759917202923,
+        "entryPrice": 3970.42,
+        "closePrice": 4045.86,
+        "commissions": -12.14,
+        "swaps": -40.05,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 66625.55000000002,
+        "quantity": 0.5,
+        "pips": 754.4
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 122,
+        "net": 3828.18,
+        "gross": 3840.5,
+        "entryTime": 1760306486151,
+        "closeTime": 1760367188594,
+        "entryPrice": 4027.09,
+        "closePrice": 4103.9,
+        "commissions": -12.32,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 70453.73000000001,
+        "quantity": 0.5,
+        "pips": 768.1
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 124,
+        "net": 3863.37,
+        "gross": 3916,
+        "entryTime": 1760398410479,
+        "closeTime": 1760510799596,
+        "entryPrice": 4117.35,
+        "closePrice": 4195.67,
+        "commissions": -12.58,
+        "swaps": -40.05,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 74317.1,
+        "quantity": 0.5,
+        "pips": 783.1999999999999
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 126,
+        "net": 3840.5699999999997,
+        "gross": 3973.5,
+        "entryTime": 1760520121724,
+        "closeTime": 1760623540591,
+        "entryPrice": 4179.92,
+        "closePrice": 4259.39,
+        "commissions": -12.78,
+        "swaps": -120.15,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 78157.67000000001,
+        "quantity": 0.5,
+        "pips": 794.6999999999999
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 128,
+        "net": -1676.4,
+        "gross": -1663.5,
+        "entryTime": 1760652003880,
+        "closeTime": 1760665397138,
+        "entryPrice": 4332.24,
+        "closePrice": 4298.97,
+        "commissions": -12.9,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 76481.27000000002,
+        "quantity": 0.5,
+        "pips": -332.7
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 130,
+        "net": -1656.4,
+        "gross": -1643.5,
+        "entryTime": 1760667000507,
+        "closeTime": 1760702163804,
+        "entryPrice": 4330.95,
+        "closePrice": 4298.08,
+        "commissions": -12.9,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 74824.87000000002,
+        "quantity": 0.5,
+        "pips": -328.69999999999993
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 132,
+        "net": -1674.04,
+        "gross": -1661,
+        "entryTime": 1760990250356,
+        "closeTime": 1760991544909,
+        "entryPrice": 4380.35,
+        "closePrice": 4347.13,
+        "commissions": -13.04,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 73150.83000000003,
+        "quantity": 0.5,
+        "pips": -332.2
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 134,
+        "net": -1520.46,
+        "gross": -1508.5,
+        "entryTime": 1761728584981,
+        "closeTime": 1761753115991,
+        "entryPrice": 4019.77,
+        "closePrice": 3989.6,
+        "commissions": -11.96,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 71630.37000000002,
+        "quantity": 0.5,
+        "pips": -301.7
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 136,
+        "net": -1542.5,
+        "gross": -1530.5,
+        "entryTime": 1761863623907,
+        "closeTime": 1761880402627,
+        "entryPrice": 4027.22,
+        "closePrice": 3996.61,
+        "commissions": -12,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 70087.87000000002,
+        "quantity": 0.5,
+        "pips": -306.09999999999997
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 138,
+        "net": -1524,
+        "gross": -1512,
+        "entryTime": 1761914446514,
+        "closeTime": 1761927007355,
+        "entryPrice": 4027.34,
+        "closePrice": 3997.1,
+        "commissions": -12,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 68563.87000000002,
+        "quantity": 0.5,
+        "pips": -302.4
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 140,
+        "net": 3700.2000000000003,
+        "gross": 3792.5,
+        "entryTime": 1762406664516,
+        "closeTime": 1762753873946,
+        "entryPrice": 3990.67,
+        "closePrice": 4066.52,
+        "commissions": -12.2,
+        "swaps": -80.1,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 72264.07000000002,
+        "quantity": 0.5,
+        "pips": 758.4999999999999
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 142,
+        "net": 3862.87,
+        "gross": 3915.5,
+        "entryTime": 1762815648735,
+        "closeTime": 1762965229080,
+        "entryPrice": 4116.72,
+        "closePrice": 4195.03,
+        "commissions": -12.58,
+        "swaps": -40.05,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 76126.94000000002,
+        "quantity": 0.5,
+        "pips": 783.1
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 144,
+        "net": -1597.04,
+        "gross": -1584.5,
+        "entryTime": 1763006170278,
+        "closeTime": 1763058681473,
+        "entryPrice": 4212.83,
+        "closePrice": 4181.14,
+        "commissions": -12.54,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 74529.90000000002,
+        "quantity": 0.5,
+        "pips": -316.9
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 146,
+        "net": -1700.3100000000002,
+        "gross": -1568,
+        "entryTime": 1763529393053,
+        "closeTime": 1763605036720,
+        "entryPrice": 4083.07,
+        "closePrice": 4051.71,
+        "commissions": -12.16,
+        "swaps": -120.15,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 72829.59000000003,
+        "quantity": 0.5,
+        "pips": -313.59999999999997
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 148,
+        "net": 3643.66,
+        "gross": 3896.5,
+        "entryTime": 1764009464624,
+        "closeTime": 1764290088330,
+        "entryPrice": 4101.5,
+        "closePrice": 4179.43,
+        "commissions": -12.54,
+        "swaps": -240.3,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 76473.25000000003,
+        "quantity": 0.5,
+        "pips": 779.3000000000001
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 150,
+        "net": 3913.71,
+        "gross": 3966.5,
+        "entryTime": 1764318711094,
+        "closeTime": 1764554152585,
+        "entryPrice": 4170.66,
+        "closePrice": 4249.99,
+        "commissions": -12.74,
+        "swaps": -40.05,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 80386.96000000004,
+        "quantity": 0.5,
+        "pips": 793.3
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 152,
+        "net": -1854.1699999999998,
+        "gross": -1801.5,
+        "entryTime": 1764566218633,
+        "closeTime": 1764637789437,
+        "entryPrice": 4227.07,
+        "closePrice": 4191.04,
+        "commissions": -12.62,
+        "swaps": -40.05,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 78532.79000000004,
+        "quantity": 0.5,
+        "pips": -360.3
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 154,
+        "net": -1630.62,
+        "gross": -1618,
+        "entryTime": 1764770099414,
+        "closeTime": 1764780902203,
+        "entryPrice": 4236.2,
+        "closePrice": 4203.84,
+        "commissions": -12.62,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 76902.17000000004,
+        "quantity": 0.5,
+        "pips": -323.59999999999997
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 156,
+        "net": -1640.61,
+        "gross": -1588,
+        "entryTime": 1764912517763,
+        "closeTime": 1765206241645,
+        "entryPrice": 4219.61,
+        "closePrice": 4187.85,
+        "commissions": -12.56,
+        "swaps": -40.05,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 75261.56000000004,
+        "quantity": 0.5,
+        "pips": -317.6
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 158,
+        "net": -1682.11,
+        "gross": -1629.5,
+        "entryTime": 1765296666764,
+        "closeTime": 1765395663048,
+        "entryPrice": 4219.11,
+        "closePrice": 4186.52,
+        "commissions": -12.56,
+        "swaps": -40.05,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 73579.45000000004,
+        "quantity": 0.5,
+        "pips": -325.90000000000003
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 160,
+        "net": 3839.38,
+        "gross": 4012.5,
+        "entryTime": 1765397054831,
+        "closeTime": 1765529089190,
+        "entryPrice": 4223.47,
+        "closePrice": 4303.72,
+        "commissions": -12.92,
+        "swaps": -160.2,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 77418.83000000005,
+        "quantity": 0.5,
+        "pips": 802.5
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 162,
+        "net": 3822.6,
+        "gross": 4076,
+        "entryTime": 1765555091518,
+        "closeTime": 1766074551507,
+        "entryPrice": 4286.62,
+        "closePrice": 4368.14,
+        "commissions": -13.1,
+        "swaps": -240.3,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 81241.43000000005,
+        "quantity": 0.5,
+        "pips": 815.1999999999999
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 164,
+        "net": 4127.18,
+        "gross": 4140.5,
+        "entryTime": 1766361604236,
+        "closeTime": 1766420351982,
+        "entryPrice": 4357.2,
+        "closePrice": 4440.01,
+        "commissions": -13.32,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 85368.61000000004,
+        "quantity": 0.5,
+        "pips": 828.1
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 166,
+        "net": 4014.6499999999996,
+        "gross": 4228.5,
+        "entryTime": 1766500596829,
+        "closeTime": 1766763047388,
+        "entryPrice": 4449.52,
+        "closePrice": 4534.09,
+        "commissions": -13.6,
+        "swaps": -200.25,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 89383.26000000004,
+        "quantity": 0.5,
+        "pips": 845.6999999999999
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 168,
+        "net": -1752.03,
+        "gross": -1698.5,
+        "entryTime": 1766769306346,
+        "closeTime": 1766967956978,
+        "entryPrice": 4526.23,
+        "closePrice": 4492.26,
+        "commissions": -13.48,
+        "swaps": -40.05,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 87631.23000000004,
+        "quantity": 0.5,
+        "pips": -339.7
+      }
+    ]
+  },
+  "entries": {
+    "entriesByHours": {
+      "zero": {
+        "totalTrades": 9
+      },
+      "one": {
+        "totalTrades": 8
+      },
+      "two": {
+        "totalTrades": 5
+      },
+      "three": {
+        "totalTrades": 4
+      },
+      "four": {
+        "totalTrades": 0
+      },
+      "five": {
+        "totalTrades": 5
+      },
+      "six": {
+        "totalTrades": 3
+      },
+      "seven": {
+        "totalTrades": 1
+      },
+      "eight": {
+        "totalTrades": 1
+      },
+      "nine": {
+        "totalTrades": 3
+      },
+      "ten": {
+        "totalTrades": 1
+      },
+      "eleven": {
+        "totalTrades": 2
+      },
+      "twelve": {
+        "totalTrades": 4
+      },
+      "thirteen": {
+        "totalTrades": 5
+      },
+      "fourteen": {
+        "totalTrades": 6
+      },
+      "fifteen": {
+        "totalTrades": 2
+      },
+      "sixteen": {
+        "totalTrades": 2
+      },
+      "seventeen": {
+        "totalTrades": 1
+      },
+      "eighteen": {
+        "totalTrades": 1
+      },
+      "nineteen": {
+        "totalTrades": 1
+      },
+      "twenty": {
+        "totalTrades": 1
+      },
+      "twentyOne": {
+        "totalTrades": 0
+      },
+      "twentyTwo": {
+        "totalTrades": 14
+      },
+      "twentyThree": {
+        "totalTrades": 5
+      }
+    },
+    "entriesByWeekdays": {
+      "sunday": {
+        "totalTrades": 4
+      },
+      "monday": {
+        "totalTrades": 19
+      },
+      "tuesday": {
+        "totalTrades": 17
+      },
+      "wednesday": {
+        "totalTrades": 15
+      },
+      "thursday": {
+        "totalTrades": 15
+      },
+      "friday": {
+        "totalTrades": 14
+      },
+      "saturday": {
+        "totalTrades": 0
+      }
+    },
+    "entriesByMonths": {
+      "january": {
+        "totalTrades": 4
+      },
+      "february": {
+        "totalTrades": 5
+      },
+      "march": {
+        "totalTrades": 6
+      },
+      "april": {
+        "totalTrades": 10
+      },
+      "may": {
+        "totalTrades": 7
+      },
+      "june": {
+        "totalTrades": 9
+      },
+      "july": {
+        "totalTrades": 2
+      },
+      "august": {
+        "totalTrades": 7
+      },
+      "september": {
+        "totalTrades": 7
+      },
+      "october": {
+        "totalTrades": 12
+      },
+      "november": {
+        "totalTrades": 6
+      },
+      "december": {
+        "totalTrades": 9
+      }
+    }
+  },
+  "profitsLosses": {
+    "profitsLossesByHours": {
+      "zero": {
+        "winningTrades": 6,
+        "losingTrades": 3
+      },
+      "one": {
+        "winningTrades": 7,
+        "losingTrades": 1
+      },
+      "two": {
+        "winningTrades": 1,
+        "losingTrades": 4
+      },
+      "three": {
+        "winningTrades": 0,
+        "losingTrades": 4
+      },
+      "four": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "five": {
+        "winningTrades": 2,
+        "losingTrades": 3
+      },
+      "six": {
+        "winningTrades": 1,
+        "losingTrades": 2
+      },
+      "seven": {
+        "winningTrades": 0,
+        "losingTrades": 1
+      },
+      "eight": {
+        "winningTrades": 1,
+        "losingTrades": 0
+      },
+      "nine": {
+        "winningTrades": 1,
+        "losingTrades": 2
+      },
+      "ten": {
+        "winningTrades": 1,
+        "losingTrades": 0
+      },
+      "eleven": {
+        "winningTrades": 1,
+        "losingTrades": 1
+      },
+      "twelve": {
+        "winningTrades": 3,
+        "losingTrades": 1
+      },
+      "thirteen": {
+        "winningTrades": 3,
+        "losingTrades": 2
+      },
+      "fourteen": {
+        "winningTrades": 5,
+        "losingTrades": 1
+      },
+      "fifteen": {
+        "winningTrades": 2,
+        "losingTrades": 0
+      },
+      "sixteen": {
+        "winningTrades": 0,
+        "losingTrades": 2
+      },
+      "seventeen": {
+        "winningTrades": 0,
+        "losingTrades": 1
+      },
+      "eighteen": {
+        "winningTrades": 1,
+        "losingTrades": 0
+      },
+      "nineteen": {
+        "winningTrades": 0,
+        "losingTrades": 1
+      },
+      "twenty": {
+        "winningTrades": 1,
+        "losingTrades": 0
+      },
+      "twentyOne": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "twentyTwo": {
+        "winningTrades": 5,
+        "losingTrades": 9
+      },
+      "twentyThree": {
+        "winningTrades": 2,
+        "losingTrades": 3
+      }
+    },
+    "profitsLossesByWeekdays": {
+      "sunday": {
+        "winningTrades": 2,
+        "losingTrades": 2
+      },
+      "monday": {
+        "winningTrades": 11,
+        "losingTrades": 8
+      },
+      "tuesday": {
+        "winningTrades": 9,
+        "losingTrades": 8
+      },
+      "wednesday": {
+        "winningTrades": 7,
+        "losingTrades": 8
+      },
+      "thursday": {
+        "winningTrades": 5,
+        "losingTrades": 10
+      },
+      "friday": {
+        "winningTrades": 9,
+        "losingTrades": 5
+      },
+      "saturday": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      }
+    },
+    "profitsLossesByMonth": {
+      "january": {
+        "winningTrades": 4,
+        "losingTrades": 0
+      },
+      "february": {
+        "winningTrades": 2,
+        "losingTrades": 3
+      },
+      "march": {
+        "winningTrades": 5,
+        "losingTrades": 1
+      },
+      "april": {
+        "winningTrades": 5,
+        "losingTrades": 5
+      },
+      "may": {
+        "winningTrades": 4,
+        "losingTrades": 3
+      },
+      "june": {
+        "winningTrades": 2,
+        "losingTrades": 7
+      },
+      "july": {
+        "winningTrades": 1,
+        "losingTrades": 1
+      },
+      "august": {
+        "winningTrades": 3,
+        "losingTrades": 4
+      },
+      "september": {
+        "winningTrades": 4,
+        "losingTrades": 3
+      },
+      "october": {
+        "winningTrades": 5,
+        "losingTrades": 7
+      },
+      "november": {
+        "winningTrades": 4,
+        "losingTrades": 2
+      },
+      "december": {
+        "winningTrades": 4,
+        "losingTrades": 5
+      }
+    }
+  },
+  "roi": {
+    "period1w": {
+      "totalRoi": -1.9601321321240668,
+      "points": [
+        {
+          "timestamp": 1766763047388,
+          "roi": 0
+        },
+        {
+          "timestamp": 1766793600000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1767052800000,
+          "roi": -1.9601321321240668
+        },
+        {
+          "timestamp": 1767311997575,
+          "roi": -1.9601321321240668
+        }
+      ]
+    },
+    "period1m": {
+      "totalRoi": 11.585530069668986,
+      "points": [
+        {
+          "timestamp": 1764637789437,
+          "roi": 0
+        },
+        {
+          "timestamp": 1764720000000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1764806400000,
+          "roi": -2.0763556216454226
+        },
+        {
+          "timestamp": 1765238400000,
+          "roi": -4.165432044372796
+        },
+        {
+          "timestamp": 1765411200000,
+          "roi": -6.307352635758891
+        },
+        {
+          "timestamp": 1765584000000,
+          "roi": -1.4184648221462541
+        },
+        {
+          "timestamp": 1766102400000,
+          "roi": 3.449056120379796
+        },
+        {
+          "timestamp": 1766448000000,
+          "roi": 8.704415060257
+        },
+        {
+          "timestamp": 1766793600000,
+          "roi": 13.816483535094063
+        },
+        {
+          "timestamp": 1767052800000,
+          "roi": 11.585530069668986
+        },
+        {
+          "timestamp": 1767311997575,
+          "roi": 11.585530069668986
+        }
+      ]
+    },
+    "period3m": {
+      "totalRoi": 48.112942857905885,
+      "points": [
+        {
+          "timestamp": 1759416005781,
+          "roi": 0
+        },
+        {
+          "timestamp": 1759449600000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1759795200000,
+          "roi": 6.322303978322366
+        },
+        {
+          "timestamp": 1759968000000,
+          "roi": 12.609469021792227
+        },
+        {
+          "timestamp": 1760400000000,
+          "roi": 19.07979935482278
+        },
+        {
+          "timestamp": 1760572800000,
+          "roi": 25.609607278880752
+        },
+        {
+          "timestamp": 1760659200000,
+          "roi": 32.100878997328486
+        },
+        {
+          "timestamp": 1760745600000,
+          "roi": 26.467832240403737
+        },
+        {
+          "timestamp": 1761004800000,
+          "roi": 23.638395852693012
+        },
+        {
+          "timestamp": 1761782400000,
+          "roi": 21.06853799382543
+        },
+        {
+          "timestamp": 1761955200000,
+          "roi": 15.885587357690708
+        },
+        {
+          "timestamp": 1762819200000,
+          "roi": 22.139607883966818
+        },
+        {
+          "timestamp": 1762992000000,
+          "roi": 28.6685707157965
+        },
+        {
+          "timestamp": 1763078400000,
+          "roi": 25.96927853124324
+        },
+        {
+          "timestamp": 1763683200000,
+          "roi": 23.095440997857875
+        },
+        {
+          "timestamp": 1764374400000,
+          "roi": 29.25389849495837
+        },
+        {
+          "timestamp": 1764633600000,
+          "roi": 35.868790304561124
+        },
+        {
+          "timestamp": 1764720000000,
+          "roi": 32.73490099068475
+        },
+        {
+          "timestamp": 1764806400000,
+          "roi": 29.97885241207918
+        },
+        {
+          "timestamp": 1765238400000,
+          "roi": 27.20591889075226
+        },
+        {
+          "timestamp": 1765411200000,
+          "roi": 24.36284271447684
+        },
+        {
+          "timestamp": 1765584000000,
+          "roi": 30.852103113421226
+        },
+        {
+          "timestamp": 1766102400000,
+          "roi": 37.31300221718403
+        },
+        {
+          "timestamp": 1766448000000,
+          "roi": 44.28869770273513
+        },
+        {
+          "timestamp": 1766793600000,
+          "roi": 51.07419673138611
+        },
+        {
+          "timestamp": 1767052800000,
+          "roi": 48.112942857905885
+        },
+        {
+          "timestamp": 1767311997575,
+          "roi": 48.112942857905885
+        }
+      ]
+    },
+    "period6m": {
+      "totalRoi": 86.34178341660088,
+      "points": [
+        {
+          "timestamp": 1752049250565,
+          "roi": 0
+        },
+        {
+          "timestamp": 1752105600000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1753142400000,
+          "roi": 5.939994237371398
+        },
+        {
+          "timestamp": 1753401600000,
+          "roi": 2.7570669283594835
+        },
+        {
+          "timestamp": 1754352000000,
+          "roi": 9.354978985543466
+        },
+        {
+          "timestamp": 1754524800000,
+          "roi": 6.471261813654467
+        },
+        {
+          "timestamp": 1754956800000,
+          "roi": 3.5555418518877002
+        },
+        {
+          "timestamp": 1755216000000,
+          "roi": 0.5516387873813435
+        },
+        {
+          "timestamp": 1755648000000,
+          "roi": -2.2670095891415767
+        },
+        {
+          "timestamp": 1756425600000,
+          "roi": 3.6184842160326642
+        },
+        {
+          "timestamp": 1756771200000,
+          "roi": 10.428358937337268
+        },
+        {
+          "timestamp": 1756944000000,
+          "roi": 17.37492065753506
+        },
+        {
+          "timestamp": 1757376000000,
+          "roi": 24.48474976688998
+        },
+        {
+          "timestamp": 1757635200000,
+          "roi": 21.210981316112086
+        },
+        {
+          "timestamp": 1758585600000,
+          "roi": 27.87827882404102
+        },
+        {
+          "timestamp": 1758758400000,
+          "roi": 24.77536912187961
+        },
+        {
+          "timestamp": 1759190400000,
+          "roi": 32.273059285965665
+        },
+        {
+          "timestamp": 1759276800000,
+          "roi": 29.181398404963954
+        },
+        {
+          "timestamp": 1759449600000,
+          "roi": 25.810600897566626
+        },
+        {
+          "timestamp": 1759795200000,
+          "roi": 33.764729523264755
+        },
+        {
+          "timestamp": 1759968000000,
+          "roi": 41.674649643875945
+        },
+        {
+          "timestamp": 1760400000000,
+          "roi": 49.815011115919205
+        },
+        {
+          "timestamp": 1760572800000,
+          "roi": 58.03020170263346
+        },
+        {
+          "timestamp": 1760659200000,
+          "roi": 66.19690965750635
+        },
+        {
+          "timestamp": 1760745600000,
+          "roi": 59.109939683778435
+        },
+        {
+          "timestamp": 1761004800000,
+          "roi": 55.55020876238517
+        },
+        {
+          "timestamp": 1761782400000,
+          "roi": 52.317055147930525
+        },
+        {
+          "timestamp": 1761955200000,
+          "roi": 45.796353808385184
+        },
+        {
+          "timestamp": 1762819200000,
+          "roi": 53.664574612750314
+        },
+        {
+          "timestamp": 1762992000000,
+          "roi": 61.878701983854015
+        },
+        {
+          "timestamp": 1763078400000,
+          "roi": 58.4827062664865
+        },
+        {
+          "timestamp": 1763683200000,
+          "roi": 54.867113996914576
+        },
+        {
+          "timestamp": 1764374400000,
+          "roi": 62.61510638003794
+        },
+        {
+          "timestamp": 1764633600000,
+          "roi": 70.9373415144231
+        },
+        {
+          "timestamp": 1764720000000,
+          "roi": 66.9945765371706
+        },
+        {
+          "timestamp": 1764806400000,
+          "roi": 63.527175259398085
+        },
+        {
+          "timestamp": 1765238400000,
+          "roi": 60.03853093372664
+        },
+        {
+          "timestamp": 1765411200000,
+          "roi": 56.461639712378975
+        },
+        {
+          "timestamp": 1765584000000,
+          "roi": 64.62581721409873
+        },
+        {
+          "timestamp": 1766102400000,
+          "roi": 72.7543131999282
+        },
+        {
+          "timestamp": 1766448000000,
+          "roi": 81.53047760708448
+        },
+        {
+          "timestamp": 1766793600000,
+          "roi": 90.06735470892883
+        },
+        {
+          "timestamp": 1767052800000,
+          "roi": 86.34178341660088
+        },
+        {
+          "timestamp": 1767311997575,
+          "roi": 86.34178341660088
+        }
+      ]
+    },
+    "period1y": {
+      "totalRoi": 617.4589880064945,
+      "points": [
+        {
+          "timestamp": 1736429841661,
+          "roi": 0
+        },
+        {
+          "timestamp": 1736467200000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1737072000000,
+          "roi": 18.453984776623102
+        },
+        {
+          "timestamp": 1737763200000,
+          "roi": 37.873737832719684
+        },
+        {
+          "timestamp": 1738627200000,
+          "roi": 57.71382442109986
+        },
+        {
+          "timestamp": 1738800000000,
+          "roi": 78.9047257638911
+        },
+        {
+          "timestamp": 1739318400000,
+          "roi": 91.50850942066181
+        },
+        {
+          "timestamp": 1739577600000,
+          "roi": 82.12829260584682
+        },
+        {
+          "timestamp": 1740700800000,
+          "roi": 69.38311510212368
+        },
+        {
+          "timestamp": 1741824000000,
+          "roi": 88.81744146728659
+        },
+        {
+          "timestamp": 1741996800000,
+          "roi": 111.31167150123913
+        },
+        {
+          "timestamp": 1742428800000,
+          "roi": 133.55815528106424
+        },
+        {
+          "timestamp": 1742515200000,
+          "roi": 124.07256852934843
+        },
+        {
+          "timestamp": 1743379200000,
+          "roi": 145.63713606640187
+        },
+        {
+          "timestamp": 1743552000000,
+          "roi": 159.38918185606647
+        },
+        {
+          "timestamp": 1743724800000,
+          "roi": 149.65568510517753
+        },
+        {
+          "timestamp": 1744243200000,
+          "roi": 173.10610433343078
+        },
+        {
+          "timestamp": 1744329600000,
+          "roi": 197.15632166404265
+        },
+        {
+          "timestamp": 1744675200000,
+          "roi": 187.02738062781484
+        },
+        {
+          "timestamp": 1744848000000,
+          "roi": 212.11001047149566
+        },
+        {
+          "timestamp": 1744934400000,
+          "roi": 201.74937019561798
+        },
+        {
+          "timestamp": 1745280000000,
+          "roi": 227.79498465299554
+        },
+        {
+          "timestamp": 1745366400000,
+          "roi": 254.5838378727553
+        },
+        {
+          "timestamp": 1745625600000,
+          "roi": 244.1531147173228
+        },
+        {
+          "timestamp": 1746489600000,
+          "roi": 269.5622521821074
+        },
+        {
+          "timestamp": 1746576000000,
+          "roi": 295.55923436091535
+        },
+        {
+          "timestamp": 1747440000000,
+          "roi": 285.4263634435911
+        },
+        {
+          "timestamp": 1747872000000,
+          "roi": 310.42212654053384
+        },
+        {
+          "timestamp": 1748044800000,
+          "roi": 334.68684988099835
+        },
+        {
+          "timestamp": 1748390400000,
+          "roi": 322.5978806478737
+        },
+        {
+          "timestamp": 1748649600000,
+          "roi": 311.73789985516754
+        },
+        {
+          "timestamp": 1748908800000,
+          "roi": 337.30087579037695
+        },
+        {
+          "timestamp": 1748995200000,
+          "roi": 326.79597612924726
+        },
+        {
+          "timestamp": 1749168000000,
+          "roi": 316.2910764681177
+        },
+        {
+          "timestamp": 1749859200000,
+          "roi": 340.5707824802626
+        },
+        {
+          "timestamp": 1750118400000,
+          "roi": 329.7532935269128
+        },
+        {
+          "timestamp": 1750723200000,
+          "roi": 308.432133000276
+        },
+        {
+          "timestamp": 1750982400000,
+          "roi": 297.96112856360395
+        },
+        {
+          "timestamp": 1752105600000,
+          "roi": 285.02314126858204
+        },
+        {
+          "timestamp": 1753142400000,
+          "roi": 307.8934936724822
+        },
+        {
+          "timestamp": 1753401600000,
+          "roi": 295.6384869630289
+        },
+        {
+          "timestamp": 1754352000000,
+          "roi": 321.0419752237372
+        },
+        {
+          "timestamp": 1754524800000,
+          "roi": 309.9389967832287
+        },
+        {
+          "timestamp": 1754956800000,
+          "roi": 298.7128001958392
+        },
+        {
+          "timestamp": 1755216000000,
+          "roi": 287.1470782562136
+        },
+        {
+          "timestamp": 1755648000000,
+          "roi": 276.2946297356092
+        },
+        {
+          "timestamp": 1756425600000,
+          "roi": 298.95514286345883
+        },
+        {
+          "timestamp": 1756771200000,
+          "roi": 325.17473643188094
+        },
+        {
+          "timestamp": 1756944000000,
+          "roi": 351.92060657714734
+        },
+        {
+          "timestamp": 1757376000000,
+          "roi": 379.29509395281366
+        },
+        {
+          "timestamp": 1757635200000,
+          "roi": 366.6903278257688
+        },
+        {
+          "timestamp": 1758585600000,
+          "roi": 392.36096612851867
+        },
+        {
+          "timestamp": 1758758400000,
+          "roi": 380.41404572252924
+        },
+        {
+          "timestamp": 1759190400000,
+          "roi": 409.2818879148789
+        },
+        {
+          "timestamp": 1759276800000,
+          "roi": 397.3782780734742
+        },
+        {
+          "timestamp": 1759449600000,
+          "roi": 384.3999276246899
+        },
+        {
+          "timestamp": 1759795200000,
+          "roi": 415.02516351989635
+        },
+        {
+          "timestamp": 1759968000000,
+          "roi": 445.4801864401092
+        },
+        {
+          "timestamp": 1760400000000,
+          "roi": 476.8224618903875
+        },
+        {
+          "timestamp": 1760572800000,
+          "roi": 508.4528467485556
+        },
+        {
+          "timestamp": 1760659200000,
+          "roi": 539.8965622546384
+        },
+        {
+          "timestamp": 1760745600000,
+          "roi": 512.6100878410299
+        },
+        {
+          "timestamp": 1761004800000,
+          "roi": 498.9043000267725
+        },
+        {
+          "timestamp": 1761782400000,
+          "roi": 486.45591041836053
+        },
+        {
+          "timestamp": 1761955200000,
+          "roi": 461.3497012881005
+        },
+        {
+          "timestamp": 1762819200000,
+          "roi": 491.6441721910153
+        },
+        {
+          "timestamp": 1762992000000,
+          "roi": 523.2704634230412
+        },
+        {
+          "timestamp": 1763078400000,
+          "roi": 510.1950940346863
+        },
+        {
+          "timestamp": 1763683200000,
+          "roi": 496.27422710291637
+        },
+        {
+          "timestamp": 1764374400000,
+          "roi": 526.1057907616685
+        },
+        {
+          "timestamp": 1764633600000,
+          "roi": 558.1483218998358
+        },
+        {
+          "timestamp": 1764720000000,
+          "roi": 542.9677643315807
+        },
+        {
+          "timestamp": 1764806400000,
+          "roi": 529.6174670115141
+        },
+        {
+          "timestamp": 1765238400000,
+          "roi": 516.1853790411258
+        },
+        {
+          "timestamp": 1765411200000,
+          "roi": 502.4135201009328
+        },
+        {
+          "timestamp": 1765584000000,
+          "roi": 533.847492776797
+        },
+        {
+          "timestamp": 1766102400000,
+          "roi": 565.1440833593282
+        },
+        {
+          "timestamp": 1766448000000,
+          "roi": 598.9343472426565
+        },
+        {
+          "timestamp": 1766793600000,
+          "roi": 631.803299626416
+        },
+        {
+          "timestamp": 1767052800000,
+          "roi": 617.4589880064945
+        },
+        {
+          "timestamp": 1767311997575,
+          "roi": 617.4589880064945
+        }
+      ]
+    },
+    "periodAll": {
+      "totalRoi": 776.3123000000004,
+      "points": [
+        {
+          "timestamp": 1735689600000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1735776000000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1736467200000,
+          "roi": 22.141100000000005
+        },
+        {
+          "timestamp": 1737072000000,
+          "roi": 44.681000000000004
+        },
+        {
+          "timestamp": 1737763200000,
+          "roi": 68.4005
+        },
+        {
+          "timestamp": 1738627200000,
+          "roi": 92.6334
+        },
+        {
+          "timestamp": 1738800000000,
+          "roi": 118.51619999999998
+        },
+        {
+          "timestamp": 1739318400000,
+          "roi": 133.91059999999996
+        },
+        {
+          "timestamp": 1739577600000,
+          "roi": 122.45349999999999
+        },
+        {
+          "timestamp": 1740700800000,
+          "roi": 106.88640000000001
+        },
+        {
+          "timestamp": 1741824000000,
+          "roi": 130.62369999999999
+        },
+        {
+          "timestamp": 1741996800000,
+          "roi": 158.0984
+        },
+        {
+          "timestamp": 1742428800000,
+          "roi": 185.27049999999997
+        },
+        {
+          "timestamp": 1742515200000,
+          "roi": 173.6847
+        },
+        {
+          "timestamp": 1743379200000,
+          "roi": 200.0239
+        },
+        {
+          "timestamp": 1743552000000,
+          "roi": 216.82080000000005
+        },
+        {
+          "timestamp": 1743724800000,
+          "roi": 204.93220000000002
+        },
+        {
+          "timestamp": 1744243200000,
+          "roi": 233.5748
+        },
+        {
+          "timestamp": 1744329600000,
+          "roi": 262.95000000000005
+        },
+        {
+          "timestamp": 1744675200000,
+          "roi": 250.5784
+        },
+        {
+          "timestamp": 1744848000000,
+          "roi": 281.21459999999996
+        },
+        {
+          "timestamp": 1744934400000,
+          "roi": 268.56
+        },
+        {
+          "timestamp": 1745280000000,
+          "roi": 300.37239999999997
+        },
+        {
+          "timestamp": 1745366400000,
+          "roi": 333.09259999999995
+        },
+        {
+          "timestamp": 1745625600000,
+          "roi": 320.3524
+        },
+        {
+          "timestamp": 1746489600000,
+          "roi": 351.3874
+        },
+        {
+          "timestamp": 1746576000000,
+          "roi": 383.1404
+        },
+        {
+          "timestamp": 1747440000000,
+          "roi": 370.764
+        },
+        {
+          "timestamp": 1747872000000,
+          "roi": 401.29410000000007
+        },
+        {
+          "timestamp": 1748044800000,
+          "roi": 430.9313
+        },
+        {
+          "timestamp": 1748390400000,
+          "roi": 416.1657000000001
+        },
+        {
+          "timestamp": 1748649600000,
+          "roi": 402.9012000000001
+        },
+        {
+          "timestamp": 1748908800000,
+          "roi": 434.1241000000001
+        },
+        {
+          "timestamp": 1748995200000,
+          "roi": 421.29330000000004
+        },
+        {
+          "timestamp": 1749168000000,
+          "roi": 408.4625000000001
+        },
+        {
+          "timestamp": 1749859200000,
+          "roi": 438.11800000000017
+        },
+        {
+          "timestamp": 1750118400000,
+          "roi": 424.9054000000001
+        },
+        {
+          "timestamp": 1750723200000,
+          "roi": 398.8635000000001
+        },
+        {
+          "timestamp": 1750982400000,
+          "roi": 386.0741000000001
+        },
+        {
+          "timestamp": 1752105600000,
+          "roi": 370.27150000000006
+        },
+        {
+          "timestamp": 1753142400000,
+          "roi": 398.2056000000001
+        },
+        {
+          "timestamp": 1753401600000,
+          "roi": 383.23720000000014
+        },
+        {
+          "timestamp": 1754352000000,
+          "roi": 414.2653000000001
+        },
+        {
+          "timestamp": 1754524800000,
+          "roi": 400.7040000000002
+        },
+        {
+          "timestamp": 1754956800000,
+          "roi": 386.99220000000014
+        },
+        {
+          "timestamp": 1755216000000,
+          "roi": 372.8657000000001
+        },
+        {
+          "timestamp": 1755648000000,
+          "roi": 359.6104000000002
+        },
+        {
+          "timestamp": 1756425600000,
+          "roi": 387.28820000000013
+        },
+        {
+          "timestamp": 1756771200000,
+          "roi": 419.3131000000001
+        },
+        {
+          "timestamp": 1756944000000,
+          "roi": 451.9808000000001
+        },
+        {
+          "timestamp": 1757376000000,
+          "roi": 485.41630000000015
+        },
+        {
+          "timestamp": 1757635200000,
+          "roi": 470.02070000000015
+        },
+        {
+          "timestamp": 1758585600000,
+          "roi": 501.3751000000002
+        },
+        {
+          "timestamp": 1758758400000,
+          "roi": 486.78300000000013
+        },
+        {
+          "timestamp": 1759190400000,
+          "roi": 522.0425000000001
+        },
+        {
+          "timestamp": 1759276800000,
+          "roi": 507.50330000000014
+        },
+        {
+          "timestamp": 1759449600000,
+          "roi": 491.65140000000014
+        },
+        {
+          "timestamp": 1759795200000,
+          "roi": 529.0574000000001
+        },
+        {
+          "timestamp": 1759968000000,
+          "roi": 566.2555000000002
+        },
+        {
+          "timestamp": 1760400000000,
+          "roi": 604.5373000000002
+        },
+        {
+          "timestamp": 1760572800000,
+          "roi": 643.171
+        },
+        {
+          "timestamp": 1760659200000,
+          "roi": 681.5767000000001
+        },
+        {
+          "timestamp": 1760745600000,
+          "roi": 648.2487000000002
+        },
+        {
+          "timestamp": 1761004800000,
+          "roi": 631.5083000000003
+        },
+        {
+          "timestamp": 1761782400000,
+          "roi": 616.3037000000003
+        },
+        {
+          "timestamp": 1761955200000,
+          "roi": 585.6387000000002
+        },
+        {
+          "timestamp": 1762819200000,
+          "roi": 622.6407000000002
+        },
+        {
+          "timestamp": 1762992000000,
+          "roi": 661.2694000000002
+        },
+        {
+          "timestamp": 1763078400000,
+          "roi": 645.2990000000002
+        },
+        {
+          "timestamp": 1763683200000,
+          "roi": 628.2959000000003
+        },
+        {
+          "timestamp": 1764374400000,
+          "roi": 664.7325000000003
+        },
+        {
+          "timestamp": 1764633600000,
+          "roi": 703.8696000000003
+        },
+        {
+          "timestamp": 1764720000000,
+          "roi": 685.3279000000005
+        },
+        {
+          "timestamp": 1764806400000,
+          "roi": 669.0217000000005
+        },
+        {
+          "timestamp": 1765238400000,
+          "roi": 652.6156000000004
+        },
+        {
+          "timestamp": 1765411200000,
+          "roi": 635.7945000000004
+        },
+        {
+          "timestamp": 1765584000000,
+          "roi": 674.1883000000005
+        },
+        {
+          "timestamp": 1766102400000,
+          "roi": 712.4143000000006
+        },
+        {
+          "timestamp": 1766448000000,
+          "roi": 753.6861000000005
+        },
+        {
+          "timestamp": 1766793600000,
+          "roi": 793.8326000000004
+        },
+        {
+          "timestamp": 1767052800000,
+          "roi": 776.3123000000004
+        },
+        {
+          "timestamp": 1767311997575,
+          "roi": 776.3123000000004
+        }
+      ]
+    }
+  }
+}</script>
+        <!-- endBacktestingReport -->
+    </head>
+    <body>
+        <div class="spinner-a spinner-b spinner-c spinner-d spinner-e spinner-f spinner-g spinner-h spinner-i spinner-j spinner-k spinner-l spinner-m spinner-n spinner-o spinner-p spinner-q spinner-r spinner-s spinner-t spinner-u spinner-v spinner-w spinner-x spinner-y spinner-z spinner-ab spinner-ac spinner-ae spinner-af spinner-ag spinner-ah spinner-ai spinner-aj spinner-ak spinner-al spinner-am spinner-an spinner-ao spinner-ap spinner-aq spinner-ar spinner-as spinner-at spinner-au spinner-av spinner-aw spinner-ax spinner-ay spinner-az spinner-ba spinner-bb spinner-bc spinner-bd spinner-be spinner-bf spinner-bg waitingIndicator" data-test-id="loader"></div>
+        <div id="root"></div>
+
+            <script id="init" defer src="https://backtesting.ctrader.com/v5.0.0/bundle/index-31bd62a5e13b796fd66a.js"></script>
+
+        <script type="text/javascript" id="app-init">
+            var script = document.getElementById('init');
+            script.onload = () => {
+                initApp('root');
+
+                script.remove();
+                document.getElementById('app-init').remove();
+            }
+        </script>
+    </body>
+</html>
