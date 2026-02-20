@@ -1,0 +1,1839 @@
+
+<!DOCTYPE html>
+<html data-app-version="4.8.2">
+    <head>
+        <title>Historical Replay Report | cTrader</title>
+
+        <meta name="title" content="Historical Replay Report | cTrader">
+        <meta name="description" content="Backtesting report of a cBot from cTrader Algo: equity, trade statistics, parameters, used symbols, positions, orders, history.">
+
+        <meta name="author" content="Spotware Systems Ltd">
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-eval' 'unsafe-inline' data: https: http: gap: ws: wss: blob: filesystem: file:">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+
+        <style type="text/css" data-fela-rehydration="58" data-fela-type="KEYFRAME">@-webkit-keyframes spinner-k1{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@-moz-keyframes spinner-k1{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@keyframes spinner-k1{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@-webkit-keyframes spinner-k2{0%{transform:rotate(0deg)}100%{transform:rotate(-360deg)}}@-moz-keyframes spinner-k2{0%{transform:rotate(0deg)}100%{transform:rotate(-360deg)}}@keyframes spinner-k2{0%{transform:rotate(0deg)}100%{transform:rotate(-360deg)}}</style><style type="text/css" data-fela-rehydration="58" data-fela-type="RULE">.spinner-a{position:absolute}.spinner-b{margin-left:auto}.spinner-c{margin-bottom:auto}.spinner-d{margin-right:auto}.spinner-e{margin-top:auto}.spinner-f{top:0}.spinner-g{bottom:0}.spinner-h{left:0}.spinner-i{right:0}.spinner-j{width:50px}.spinner-k{height:50px}.spinner-l{display:flex}.spinner-m{z-index:200}.spinner-n:before{content:""}.spinner-o:before{position:absolute}.spinner-p:before{border-style:solid}.spinner-q:before{border-top-left-radius:50%}.spinner-r:before{border-top-right-radius:50%}.spinner-s:before{border-bottom-right-radius:50%}.spinner-t:before{border-bottom-left-radius:50%}.spinner-u:before{display:inline-block}.spinner-v:before{box-sizing:border-box}.spinner-w:before{border-width:7px}.spinner-x:before{border-top-color:transparent}.spinner-y:before{border-left-color:transparent}.spinner-z:before{margin-top:7px}.spinner-ab:before{margin-right:7px}.spinner-ac:before{margin-bottom:7px}.spinner-ae:before{margin-left:7px}.spinner-af:before{width:calc(100% - 14px)}.spinner-ag:before{height:calc(100% - 14px)}.spinner-ah:before{border-right-color:#e75731}.spinner-ai:before{border-bottom-color:#e75731}.spinner-aj:before{animation-iteration-count:infinite}.spinner-ak:before{animation-timing-function:linear}.spinner-al:before{animation-duration:0.6s}.spinner-am:before{animation-name:spinner-k2}.spinner-an:after{content:""}.spinner-ao:after{position:absolute}.spinner-ap:after{border-style:solid}.spinner-aq:after{border-top-left-radius:50%}.spinner-ar:after{border-top-right-radius:50%}.spinner-as:after{border-bottom-right-radius:50%}.spinner-at:after{border-bottom-left-radius:50%}.spinner-au:after{display:inline-block}.spinner-av:after{box-sizing:border-box}.spinner-aw:after{border-width:7px}.spinner-ax:after{border-top-color:transparent}.spinner-ay:after{border-left-color:transparent}.spinner-az:after{width:100%}.spinner-ba:after{height:100%}.spinner-bb:after{border-right-color:rgba(36, 150, 73, 0.9)}.spinner-bc:after{border-bottom-color:rgba(36, 150, 73, 0.9)}.spinner-bd:after{animation-iteration-count:infinite}.spinner-be:after{animation-timing-function:linear}.spinner-bf:after{animation-duration:0.9s}.spinner-bg:after{animation-name:spinner-k1}</style>
+
+        <style>
+            html {
+                height: 100%;
+            }
+
+            body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            #root {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+
+        <!-- startBacktestingReport -->
+        <script type="application/json" id="backtesting-report">{
+  "main": {
+    "utcOffset": 0,
+    "language": "en",
+    "depositAsset": "USD",
+    "depositAssetDigits": 2,
+    "period": "m1",
+    "symbol": "NAS100",
+    "brokerTitle": "Fusion Markets",
+    "cBotName": "Q2 System",
+    "roi": 13.08,
+    "netProfit": 1308.1,
+    "startingCapital": 10000,
+    "endingEquity": 11308.100000000002,
+    "endingBalance": 11308.160000000002,
+    "testingPeriod": {
+      "duration": "1m",
+      "startDate": 1767225600000,
+      "endDate": 1769904000000,
+      "formatted": "1m (01.01.2026 - 01.02.2026)"
+    },
+    "accountType": "hedging",
+    "accountLeverage": 500,
+    "data": {
+      "type": "tickDataFromServer",
+      "isCustom": false,
+      "customName": null
+    },
+    "spread": null,
+    "commissions": {
+      "type": "usdPerMillionUsdVolume",
+      "value": 30,
+      "applyCommissionAutomatically": false
+    },
+    "theme": "dark",
+    "titleKind": "backtesting",
+    "authorNickName": "AlgoQ",
+    "authorLink": "https://ctrader.com/profile/AlgoQ",
+    "cBotLink": "https://ctrader.com/products/3492",
+    "embedded": false
+  },
+  "equity": {
+    "points": [
+      {
+        "balance": 10000,
+        "minEquity": 10000,
+        "maxEquity": 10000,
+        "timestamp": 1767225600000
+      },
+      {
+        "balance": 10121.46,
+        "minEquity": 9723.36,
+        "maxEquity": 10121.46,
+        "timestamp": 1767364561578
+      },
+      {
+        "balance": 10243.529999999999,
+        "minEquity": 10096.05,
+        "maxEquity": 10243.55,
+        "timestamp": 1767365321629
+      },
+      {
+        "balance": 10363.81,
+        "minEquity": 10176.329999999998,
+        "maxEquity": 10363.829999999998,
+        "timestamp": 1767621855469
+      },
+      {
+        "balance": 10484.67,
+        "minEquity": 10067.789999999999,
+        "maxEquity": 10484.689999999999,
+        "timestamp": 1767709840678
+      },
+      {
+        "balance": 10606.74,
+        "minEquity": 10375.51,
+        "maxEquity": 10606.76,
+        "timestamp": 1767796221674
+      },
+      {
+        "balance": 10220.73,
+        "minEquity": 9472.58,
+        "maxEquity": 10711.98,
+        "timestamp": 1767913209219
+      },
+      {
+        "balance": 10341.55,
+        "minEquity": 9977.199999999999,
+        "maxEquity": 10341.55,
+        "timestamp": 1767967262902
+      },
+      {
+        "balance": 10465.56,
+        "minEquity": 9686.81,
+        "maxEquity": 10465.56,
+        "timestamp": 1767971309906
+      },
+      {
+        "balance": 10588.88,
+        "minEquity": 10252.63,
+        "maxEquity": 10588.88,
+        "timestamp": 1768228205301
+      },
+      {
+        "balance": 10714.039999999999,
+        "minEquity": 10534.64,
+        "maxEquity": 10714.039999999999,
+        "timestamp": 1768311003376
+      },
+      {
+        "balance": 10842.99,
+        "minEquity": 10632.97,
+        "maxEquity": 10842.97,
+        "timestamp": 1768317695367
+      },
+      {
+        "balance": 10965.08,
+        "minEquity": 10825.66,
+        "maxEquity": 10965.06,
+        "timestamp": 1768401148685
+      },
+      {
+        "balance": 11085.86,
+        "minEquity": 10932.76,
+        "maxEquity": 11085.86,
+        "timestamp": 1768484028007
+      },
+      {
+        "balance": 11206.7,
+        "minEquity": 10884.18,
+        "maxEquity": 11206.68,
+        "timestamp": 1768508400268
+      },
+      {
+        "balance": 11333.77,
+        "minEquity": 10771.230000000001,
+        "maxEquity": 11333.730000000001,
+        "timestamp": 1768575290835
+      },
+      {
+        "balance": 10612.220000000001,
+        "minEquity": 10517.19,
+        "maxEquity": 11417.19,
+        "timestamp": 1768863608612
+      },
+      {
+        "balance": 10738.78,
+        "minEquity": 10574.43,
+        "maxEquity": 10738.78,
+        "timestamp": 1768919418112
+      },
+      {
+        "balance": 10860.34,
+        "minEquity": 10460.36,
+        "maxEquity": 10860.36,
+        "timestamp": 1769005500208
+      },
+      {
+        "balance": 10322.76,
+        "minEquity": 9964.93,
+        "maxEquity": 10974.93,
+        "timestamp": 1769122809200
+      },
+      {
+        "balance": 10443,
+        "minEquity": 10117.33,
+        "maxEquity": 10442.98,
+        "timestamp": 1769180417975
+      },
+      {
+        "balance": 10564.42,
+        "minEquity": 10285.05,
+        "maxEquity": 10564.4,
+        "timestamp": 1769437911868
+      },
+      {
+        "balance": 10688.28,
+        "minEquity": 10328.24,
+        "maxEquity": 10688.24,
+        "timestamp": 1769524571614
+      },
+      {
+        "balance": 10816.5,
+        "minEquity": 10572.710000000001,
+        "maxEquity": 10816.460000000001,
+        "timestamp": 1769526601911
+      },
+      {
+        "balance": 10942.16,
+        "minEquity": 10628.97,
+        "maxEquity": 10942.12,
+        "timestamp": 1769610963031
+      },
+      {
+        "balance": 11065.36,
+        "minEquity": 10690.95,
+        "maxEquity": 11065.3,
+        "timestamp": 1769697000069
+      },
+      {
+        "balance": 11187.970000000001,
+        "minEquity": 10585.41,
+        "maxEquity": 11187.91,
+        "timestamp": 1769784050740
+      },
+      {
+        "balance": 11308.160000000002,
+        "minEquity": 11148.1,
+        "maxEquity": 11308.1,
+        "timestamp": 1769797149244
+      },
+      {
+        "balance": 11308.160000000002,
+        "minEquity": 11308.100000000002,
+        "maxEquity": 11308.100000000002,
+        "timestamp": 1769990399430
+      }
+    ],
+    "maxBalanceDrawdownPercent": 8.920332775413655,
+    "maxEquityDrawdownPercent": 12.719942472710011,
+    "maxBalanceDrawdownAbsolute": 1011.0100000000002,
+    "maxEquityDrawdownAbsolute": 1452.2600000000002
+  },
+  "tradeStatistics": {
+    "netProfit": {
+      "all": 1308.16,
+      "long": 792.38,
+      "short": 515.78
+    },
+    "profitFactor": {
+      "all": 1.8,
+      "long": 1.86,
+      "short": 1.71
+    },
+    "commissions": {
+      "all": -207.28,
+      "long": -122.68,
+      "short": -84.6
+    },
+    "swaps": {
+      "all": -36.01,
+      "long": -41.44,
+      "short": 5.43
+    },
+    "totalTrades": {
+      "all": 27,
+      "long": 16,
+      "short": 11
+    },
+    "winningTrades": {
+      "all": 24,
+      "long": 14,
+      "short": 10
+    },
+    "maxConsecutiveWinningTrades": {
+      "all": 9,
+      "long": 6,
+      "short": 6
+    },
+    "largestWinningTrade": {
+      "all": 128.95,
+      "long": 128.22,
+      "short": 128.95
+    },
+    "losingTrades": {
+      "all": 3,
+      "long": 2,
+      "short": 1
+    },
+    "maxConsecutiveLosingTrades": {
+      "all": 1,
+      "long": 1,
+      "short": 1
+    },
+    "largestLosingTrade": {
+      "all": -721.55,
+      "long": -537.58,
+      "short": -721.55
+    },
+    "averageTrade": {
+      "all": 48.45,
+      "long": 49.52,
+      "short": 46.89
+    }
+  },
+  "parameters": [
+    {
+      "group": null,
+      "displayName": "Risk Unit",
+      "propertyName": "RiskUnitType",
+      "value": "Percentage"
+    },
+    {
+      "group": null,
+      "displayName": "Take Profit",
+      "propertyName": "TakeProfit",
+      "value": 0.1
+    },
+    {
+      "group": null,
+      "displayName": "Stop Loss",
+      "propertyName": "StopLoss",
+      "value": 1.7
+    },
+    {
+      "group": null,
+      "displayName": "Volume (lots)",
+      "propertyName": "Volume",
+      "value": 5
+    },
+    {
+      "group": "Version 1.0",
+      "displayName": "",
+      "propertyName": "Brand",
+      "value": "AlgoQ"
+    }
+  ],
+  "usedSymbols": [
+    {
+      "symbol": "NAS100",
+      "period": "m1",
+      "swapTime": "22:00",
+      "baseAsset": "NAS100",
+      "baseAssetDigits": 2,
+      "quoteAsset": "USD",
+      "quoteAssetDigits": 2,
+      "commissions": {
+        "type": "usdPerMillionUsdVolume",
+        "value": 30,
+        "applyCommissionAutomatically": false
+      },
+      "swapLong": -5.93,
+      "swapShort": 1.57,
+      "threeDaySwaps": "friday",
+      "weekendSwaps": false,
+      "swapPeriods": 24,
+      "gracePeriods": 0,
+      "digits": 2,
+      "lotSize": 1,
+      "stepVolume": 0.01,
+      "pipPosition": 1,
+      "swapCalculationType": "percent"
+    }
+  ],
+  "positions": {
+    "columns": [
+      "id",
+      "symbol",
+      "quantity",
+      "volume",
+      "direction",
+      "entryPrice",
+      "tp",
+      "sl",
+      "commissions",
+      "closingCommissions",
+      "swaps",
+      "created",
+      "label",
+      "comment",
+      "pips",
+      "gross",
+      "net"
+    ],
+    "items": [],
+    "marginUsed": 0,
+    "freeMargin": 11308.100000000002,
+    "marginLevel": null,
+    "unrealizedNet": -0.05999999999999961,
+    "unrealizedGross": 0
+  },
+  "orders": {
+    "columns": [
+      "id",
+      "symbol",
+      "direction",
+      "created",
+      "quantity",
+      "volume",
+      "orderType",
+      "submittedPrice",
+      "distance",
+      "tp",
+      "sl",
+      "expiryDate",
+      "currentPrice",
+      "limitRange",
+      "comment",
+      "label"
+    ],
+    "items": []
+  },
+  "history": {
+    "columns": [
+      "id",
+      "label",
+      "entryTime",
+      "symbol",
+      "quantity",
+      "volume",
+      "direction",
+      "entryPrice",
+      "commissions",
+      "swaps",
+      "closePrice",
+      "closeTime",
+      "net",
+      "pips",
+      "gross"
+    ],
+    "items": [
+      {
+        "symbol": "NAS100",
+        "direction": "sell",
+        "id": 2,
+        "net": 121.46,
+        "gross": 129.1,
+        "entryTime": 1767362123415,
+        "closeTime": 1767364561578,
+        "entryPrice": 25477.61,
+        "closePrice": 25451.79,
+        "commissions": -7.64,
+        "swaps": 0,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 10121.46,
+        "quantity": 5,
+        "pips": 258.2
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "buy",
+        "id": 4,
+        "net": 122.07,
+        "gross": 129.75,
+        "entryTime": 1767365245540,
+        "closeTime": 1767365321629,
+        "entryPrice": 25546.54,
+        "closePrice": 25572.49,
+        "commissions": -7.68,
+        "swaps": 0,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 10243.529999999999,
+        "quantity": 5,
+        "pips": 259.5
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "buy",
+        "id": 6,
+        "net": 120.28,
+        "gross": 127.9,
+        "entryTime": 1767621434342,
+        "closeTime": 1767621855469,
+        "entryPrice": 25392.98,
+        "closePrice": 25418.56,
+        "commissions": -7.62,
+        "swaps": 0,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 10363.81,
+        "quantity": 5,
+        "pips": 255.79999999999998
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "buy",
+        "id": 8,
+        "net": 120.86,
+        "gross": 128.5,
+        "entryTime": 1767704629017,
+        "closeTime": 1767709840678,
+        "entryPrice": 25458.57,
+        "closePrice": 25484.27,
+        "commissions": -7.64,
+        "swaps": 0,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 10484.67,
+        "quantity": 5,
+        "pips": 257
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "buy",
+        "id": 10,
+        "net": 122.07,
+        "gross": 129.75,
+        "entryTime": 1767792653802,
+        "closeTime": 1767796221674,
+        "entryPrice": 25595.23,
+        "closePrice": 25621.18,
+        "commissions": -7.68,
+        "swaps": 0,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 10606.74,
+        "quantity": 5,
+        "pips": 259.5
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "buy",
+        "id": 12,
+        "net": -386.01000000000005,
+        "gross": -357.6,
+        "entryTime": 1767878302374,
+        "closeTime": 1767913209219,
+        "entryPrice": 25611.5,
+        "closePrice": 25539.98,
+        "commissions": -7.66,
+        "swaps": -20.75,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 10220.73,
+        "quantity": 5,
+        "pips": -715.1999999999999
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "buy",
+        "id": 14,
+        "net": 120.82,
+        "gross": 128.5,
+        "entryTime": 1767965401314,
+        "closeTime": 1767967262902,
+        "entryPrice": 25604.08,
+        "closePrice": 25629.78,
+        "commissions": -7.68,
+        "swaps": 0,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 10341.55,
+        "quantity": 5,
+        "pips": 257
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "sell",
+        "id": 16,
+        "net": 124.01,
+        "gross": 131.65,
+        "entryTime": 1767969089317,
+        "closeTime": 1767971309906,
+        "entryPrice": 25480.41,
+        "closePrice": 25454.08,
+        "commissions": -7.64,
+        "swaps": 0,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 10465.56,
+        "quantity": 5,
+        "pips": 263.29999999999995
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "buy",
+        "id": 18,
+        "net": 123.32,
+        "gross": 131,
+        "entryTime": 1768223232967,
+        "closeTime": 1768228205301,
+        "entryPrice": 25589.4,
+        "closePrice": 25615.6,
+        "commissions": -7.68,
+        "swaps": 0,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 10588.88,
+        "quantity": 5,
+        "pips": 262
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "buy",
+        "id": 20,
+        "net": 125.16000000000001,
+        "gross": 132.9,
+        "entryTime": 1768311001179,
+        "closeTime": 1768311003376,
+        "entryPrice": 25771.65,
+        "closePrice": 25798.23,
+        "commissions": -7.74,
+        "swaps": 0,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 10714.039999999999,
+        "quantity": 5,
+        "pips": 265.79999999999995
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "sell",
+        "id": 22,
+        "net": 128.95000000000002,
+        "gross": 136.65,
+        "entryTime": 1768317522170,
+        "closeTime": 1768317695367,
+        "entryPrice": 25701.48,
+        "closePrice": 25674.15,
+        "commissions": -7.7,
+        "swaps": 0,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 10842.99,
+        "quantity": 5,
+        "pips": 273.29999999999995
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "sell",
+        "id": 24,
+        "net": 122.09,
+        "gross": 129.75,
+        "entryTime": 1768401085338,
+        "closeTime": 1768401148685,
+        "entryPrice": 25528.05,
+        "closePrice": 25502.1,
+        "commissions": -7.66,
+        "swaps": 0,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 10965.08,
+        "quantity": 5,
+        "pips": 259.5
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "buy",
+        "id": 26,
+        "net": 120.78,
+        "gross": 128.5,
+        "entryTime": 1768482287339,
+        "closeTime": 1768484028007,
+        "entryPrice": 25691.47,
+        "closePrice": 25717.17,
+        "commissions": -7.72,
+        "swaps": 0,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 11085.86,
+        "quantity": 5,
+        "pips": 257
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "sell",
+        "id": 28,
+        "net": 120.84,
+        "gross": 128.5,
+        "entryTime": 1768507206354,
+        "closeTime": 1768508400268,
+        "entryPrice": 25568.92,
+        "closePrice": 25543.22,
+        "commissions": -7.66,
+        "swaps": 0,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 11206.7,
+        "quantity": 5,
+        "pips": 257
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "sell",
+        "id": 30,
+        "net": 127.07,
+        "gross": 134.75,
+        "entryTime": 1768569621271,
+        "closeTime": 1768575290835,
+        "entryPrice": 25644.19,
+        "closePrice": 25617.24,
+        "commissions": -7.68,
+        "swaps": 0,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 11333.77,
+        "quantity": 5,
+        "pips": 269.5
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "sell",
+        "id": 32,
+        "net": -721.5500000000001,
+        "gross": -719.4,
+        "entryTime": 1768833317828,
+        "closeTime": 1768863608612,
+        "entryPrice": 25104.08,
+        "closePrice": 25247.96,
+        "commissions": -7.58,
+        "swaps": 5.43,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 10612.220000000001,
+        "quantity": 5,
+        "pips": -1438.8
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "buy",
+        "id": 34,
+        "net": 126.55999999999999,
+        "gross": 134.1,
+        "entryTime": 1768919404461,
+        "closeTime": 1768919418112,
+        "entryPrice": 25135.76,
+        "closePrice": 25162.58,
+        "commissions": -7.54,
+        "swaps": 0,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 10738.78,
+        "quantity": 5,
+        "pips": 268.2
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "buy",
+        "id": 36,
+        "net": 121.55999999999999,
+        "gross": 129.1,
+        "entryTime": 1769005080224,
+        "closeTime": 1769005500208,
+        "entryPrice": 25079.64,
+        "closePrice": 25105.46,
+        "commissions": -7.54,
+        "swaps": 0,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 10860.34,
+        "quantity": 5,
+        "pips": 258.2
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "buy",
+        "id": 38,
+        "net": -537.58,
+        "gross": -509.25,
+        "entryTime": 1769089624250,
+        "closeTime": 1769122809200,
+        "entryPrice": 25572.77,
+        "closePrice": 25470.92,
+        "commissions": -7.64,
+        "swaps": -20.69,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 10322.76,
+        "quantity": 5,
+        "pips": -1018.4999999999999
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "buy",
+        "id": 40,
+        "net": 120.24000000000001,
+        "gross": 127.9,
+        "entryTime": 1769180180849,
+        "closeTime": 1769180417975,
+        "entryPrice": 25519.77,
+        "closePrice": 25545.35,
+        "commissions": -7.66,
+        "swaps": 0,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 10443,
+        "quantity": 5,
+        "pips": 255.79999999999998
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "buy",
+        "id": 42,
+        "net": 121.41999999999999,
+        "gross": 129.1,
+        "entryTime": 1769436503983,
+        "closeTime": 1769437911868,
+        "entryPrice": 25605.06,
+        "closePrice": 25630.88,
+        "commissions": -7.68,
+        "swaps": 0,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 10564.42,
+        "quantity": 5,
+        "pips": 258.2
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "sell",
+        "id": 44,
+        "net": 123.86,
+        "gross": 131.6,
+        "entryTime": 1769524221308,
+        "closeTime": 1769524571614,
+        "entryPrice": 25839.99,
+        "closePrice": 25813.67,
+        "commissions": -7.74,
+        "swaps": 0,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 10688.28,
+        "quantity": 5,
+        "pips": 263.2
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "buy",
+        "id": 46,
+        "net": 128.22,
+        "gross": 136,
+        "entryTime": 1769525701168,
+        "closeTime": 1769526601911,
+        "entryPrice": 25917.54,
+        "closePrice": 25944.74,
+        "commissions": -7.78,
+        "swaps": 0,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 10816.5,
+        "quantity": 5,
+        "pips": 272
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "sell",
+        "id": 48,
+        "net": 125.66,
+        "gross": 133.5,
+        "entryTime": 1769609421288,
+        "closeTime": 1769610963031,
+        "entryPrice": 26128.08,
+        "closePrice": 26101.38,
+        "commissions": -7.84,
+        "swaps": 0,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 10942.16,
+        "quantity": 5,
+        "pips": 267
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "sell",
+        "id": 50,
+        "net": 123.2,
+        "gross": 131,
+        "entryTime": 1769692631131,
+        "closeTime": 1769697000069,
+        "entryPrice": 26034.45,
+        "closePrice": 26008.25,
+        "commissions": -7.8,
+        "swaps": 0,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 11065.36,
+        "quantity": 5,
+        "pips": 262
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "buy",
+        "id": 52,
+        "net": 122.61,
+        "gross": 130.35,
+        "entryTime": 1769783439959,
+        "closeTime": 1769784050740,
+        "entryPrice": 25787.36,
+        "closePrice": 25813.43,
+        "commissions": -7.74,
+        "swaps": 0,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 11187.970000000001,
+        "quantity": 5,
+        "pips": 260.7
+      },
+      {
+        "symbol": "NAS100",
+        "direction": "sell",
+        "id": 54,
+        "net": 120.19,
+        "gross": 127.85,
+        "entryTime": 1769796953063,
+        "closeTime": 1769797149244,
+        "entryPrice": 25527.93,
+        "closePrice": 25502.36,
+        "commissions": -7.66,
+        "swaps": 0,
+        "volume": 5,
+        "label": "Q2 System",
+        "comment": null,
+        "balance": 11308.160000000002,
+        "quantity": 5,
+        "pips": 255.7
+      }
+    ]
+  },
+  "entries": {
+    "entriesByHours": {
+      "zero": {
+        "totalTrades": 0
+      },
+      "one": {
+        "totalTrades": 0
+      },
+      "two": {
+        "totalTrades": 0
+      },
+      "three": {
+        "totalTrades": 0
+      },
+      "four": {
+        "totalTrades": 0
+      },
+      "five": {
+        "totalTrades": 0
+      },
+      "six": {
+        "totalTrades": 0
+      },
+      "seven": {
+        "totalTrades": 0
+      },
+      "eight": {
+        "totalTrades": 0
+      },
+      "nine": {
+        "totalTrades": 0
+      },
+      "ten": {
+        "totalTrades": 0
+      },
+      "eleven": {
+        "totalTrades": 0
+      },
+      "twelve": {
+        "totalTrades": 0
+      },
+      "thirteen": {
+        "totalTrades": 12
+      },
+      "fourteen": {
+        "totalTrades": 12
+      },
+      "fifteen": {
+        "totalTrades": 1
+      },
+      "sixteen": {
+        "totalTrades": 0
+      },
+      "seventeen": {
+        "totalTrades": 0
+      },
+      "eighteen": {
+        "totalTrades": 1
+      },
+      "nineteen": {
+        "totalTrades": 0
+      },
+      "twenty": {
+        "totalTrades": 1
+      },
+      "twentyOne": {
+        "totalTrades": 0
+      },
+      "twentyTwo": {
+        "totalTrades": 0
+      },
+      "twentyThree": {
+        "totalTrades": 0
+      }
+    },
+    "entriesByWeekdays": {
+      "sunday": {
+        "totalTrades": 0
+      },
+      "monday": {
+        "totalTrades": 4
+      },
+      "tuesday": {
+        "totalTrades": 6
+      },
+      "wednesday": {
+        "totalTrades": 4
+      },
+      "thursday": {
+        "totalTrades": 5
+      },
+      "friday": {
+        "totalTrades": 8
+      },
+      "saturday": {
+        "totalTrades": 0
+      }
+    },
+    "entriesByMonths": {
+      "january": {
+        "totalTrades": 27
+      },
+      "february": {
+        "totalTrades": 0
+      },
+      "march": {
+        "totalTrades": 0
+      },
+      "april": {
+        "totalTrades": 0
+      },
+      "may": {
+        "totalTrades": 0
+      },
+      "june": {
+        "totalTrades": 0
+      },
+      "july": {
+        "totalTrades": 0
+      },
+      "august": {
+        "totalTrades": 0
+      },
+      "september": {
+        "totalTrades": 0
+      },
+      "october": {
+        "totalTrades": 0
+      },
+      "november": {
+        "totalTrades": 0
+      },
+      "december": {
+        "totalTrades": 0
+      }
+    }
+  },
+  "profitsLosses": {
+    "profitsLossesByHours": {
+      "zero": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "one": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "two": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "three": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "four": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "five": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "six": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "seven": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "eight": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "nine": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "ten": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "eleven": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "twelve": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "thirteen": {
+        "winningTrades": 10,
+        "losingTrades": 2
+      },
+      "fourteen": {
+        "winningTrades": 11,
+        "losingTrades": 1
+      },
+      "fifteen": {
+        "winningTrades": 1,
+        "losingTrades": 0
+      },
+      "sixteen": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "seventeen": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "eighteen": {
+        "winningTrades": 1,
+        "losingTrades": 0
+      },
+      "nineteen": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "twenty": {
+        "winningTrades": 1,
+        "losingTrades": 0
+      },
+      "twentyOne": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "twentyTwo": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "twentyThree": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      }
+    },
+    "profitsLossesByWeekdays": {
+      "sunday": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "monday": {
+        "winningTrades": 3,
+        "losingTrades": 1
+      },
+      "tuesday": {
+        "winningTrades": 6,
+        "losingTrades": 0
+      },
+      "wednesday": {
+        "winningTrades": 4,
+        "losingTrades": 0
+      },
+      "thursday": {
+        "winningTrades": 3,
+        "losingTrades": 2
+      },
+      "friday": {
+        "winningTrades": 8,
+        "losingTrades": 0
+      },
+      "saturday": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      }
+    },
+    "profitsLossesByMonth": {
+      "january": {
+        "winningTrades": 24,
+        "losingTrades": 3
+      },
+      "february": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "march": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "april": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "may": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "june": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "july": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "august": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "september": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "october": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "november": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "december": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      }
+    }
+  },
+  "roi": {
+    "period1w": {
+      "totalRoi": 7.040045738431468,
+      "points": [
+        {
+          "timestamp": 1769437911868,
+          "roi": 0
+        },
+        {
+          "timestamp": 1769472000000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1769558400000,
+          "roi": 2.386122475251835
+        },
+        {
+          "timestamp": 1769644800000,
+          "roi": 3.5755867335831004
+        },
+        {
+          "timestamp": 1769731200000,
+          "roi": 4.741765283848999
+        },
+        {
+          "timestamp": 1769817600000,
+          "roi": 7.040045738431468
+        },
+        {
+          "timestamp": 1769990399430,
+          "roi": 7.040045738431468
+        }
+      ]
+    },
+    "period1m": {
+      "totalRoi": 11.724593092300939,
+      "points": [
+        {
+          "timestamp": 1767364561578,
+          "roi": 0
+        },
+        {
+          "timestamp": 1767398400000,
+          "roi": 1.2060513008992746
+        },
+        {
+          "timestamp": 1767657600000,
+          "roi": 2.394417406184487
+        },
+        {
+          "timestamp": 1767744000000,
+          "roi": 3.5885139100485604
+        },
+        {
+          "timestamp": 1767830400000,
+          "roi": 4.794565210947835
+        },
+        {
+          "timestamp": 1767916800000,
+          "roi": 0.9807873567647399
+        },
+        {
+          "timestamp": 1768003200000,
+          "roi": 3.3997071568726294
+        },
+        {
+          "timestamp": 1768262400000,
+          "roi": 4.6181084547091045
+        },
+        {
+          "timestamp": 1768348800000,
+          "roi": 7.128714632078778
+        },
+        {
+          "timestamp": 1768435200000,
+          "roi": 8.334963532929054
+        },
+        {
+          "timestamp": 1768521600000,
+          "roi": 10.722168540902219
+        },
+        {
+          "timestamp": 1768608000000,
+          "roi": 11.977619829550296
+        },
+        {
+          "timestamp": 1768867200000,
+          "roi": 4.848707597520536
+        },
+        {
+          "timestamp": 1768953600000,
+          "roi": 6.099120087418234
+        },
+        {
+          "timestamp": 1769040000000,
+          "roi": 7.300132589567128
+        },
+        {
+          "timestamp": 1769126400000,
+          "roi": 1.9888435067668215
+        },
+        {
+          "timestamp": 1769212800000,
+          "roi": 3.176814412150035
+        },
+        {
+          "timestamp": 1769472000000,
+          "roi": 4.376443714641969
+        },
+        {
+          "timestamp": 1769558400000,
+          "roi": 6.866993496985622
+        },
+        {
+          "timestamp": 1769644800000,
+          "roi": 8.108513989088538
+        },
+        {
+          "timestamp": 1769731200000,
+          "roi": 9.325729687219052
+        },
+        {
+          "timestamp": 1769817600000,
+          "roi": 11.724593092300939
+        },
+        {
+          "timestamp": 1769990399430,
+          "roi": 11.724593092300939
+        }
+      ]
+    },
+    "period3m": {
+      "totalRoi": 13.081600000000016,
+      "points": [
+        {
+          "timestamp": 1767225600000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1767312000000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1767398400000,
+          "roi": 2.4352999999999887
+        },
+        {
+          "timestamp": 1767657600000,
+          "roi": 3.638099999999995
+        },
+        {
+          "timestamp": 1767744000000,
+          "roi": 4.846700000000001
+        },
+        {
+          "timestamp": 1767830400000,
+          "roi": 6.0673999999999975
+        },
+        {
+          "timestamp": 1767916800000,
+          "roi": 2.2072999999999956
+        },
+        {
+          "timestamp": 1768003200000,
+          "roi": 4.655599999999995
+        },
+        {
+          "timestamp": 1768262400000,
+          "roi": 5.888799999999992
+        },
+        {
+          "timestamp": 1768348800000,
+          "roi": 8.429899999999998
+        },
+        {
+          "timestamp": 1768435200000,
+          "roi": 9.6508
+        },
+        {
+          "timestamp": 1768521600000,
+          "roi": 12.067000000000007
+        },
+        {
+          "timestamp": 1768608000000,
+          "roi": 13.337700000000005
+        },
+        {
+          "timestamp": 1768867200000,
+          "roi": 6.122200000000012
+        },
+        {
+          "timestamp": 1768953600000,
+          "roi": 7.387800000000007
+        },
+        {
+          "timestamp": 1769040000000,
+          "roi": 8.6034
+        },
+        {
+          "timestamp": 1769126400000,
+          "roi": 3.227600000000002
+        },
+        {
+          "timestamp": 1769212800000,
+          "roi": 4.43
+        },
+        {
+          "timestamp": 1769472000000,
+          "roi": 5.6442000000000005
+        },
+        {
+          "timestamp": 1769558400000,
+          "roi": 8.165
+        },
+        {
+          "timestamp": 1769644800000,
+          "roi": 9.421599999999998
+        },
+        {
+          "timestamp": 1769731200000,
+          "roi": 10.653600000000006
+        },
+        {
+          "timestamp": 1769817600000,
+          "roi": 13.081600000000016
+        },
+        {
+          "timestamp": 1769990399430,
+          "roi": 13.081600000000016
+        }
+      ]
+    },
+    "period6m": {
+      "totalRoi": 13.081600000000016,
+      "points": [
+        {
+          "timestamp": 1767225600000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1767312000000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1767398400000,
+          "roi": 2.4352999999999887
+        },
+        {
+          "timestamp": 1767657600000,
+          "roi": 3.638099999999995
+        },
+        {
+          "timestamp": 1767744000000,
+          "roi": 4.846700000000001
+        },
+        {
+          "timestamp": 1767830400000,
+          "roi": 6.0673999999999975
+        },
+        {
+          "timestamp": 1767916800000,
+          "roi": 2.2072999999999956
+        },
+        {
+          "timestamp": 1768003200000,
+          "roi": 4.655599999999995
+        },
+        {
+          "timestamp": 1768262400000,
+          "roi": 5.888799999999992
+        },
+        {
+          "timestamp": 1768348800000,
+          "roi": 8.429899999999998
+        },
+        {
+          "timestamp": 1768435200000,
+          "roi": 9.6508
+        },
+        {
+          "timestamp": 1768521600000,
+          "roi": 12.067000000000007
+        },
+        {
+          "timestamp": 1768608000000,
+          "roi": 13.337700000000005
+        },
+        {
+          "timestamp": 1768867200000,
+          "roi": 6.122200000000012
+        },
+        {
+          "timestamp": 1768953600000,
+          "roi": 7.387800000000007
+        },
+        {
+          "timestamp": 1769040000000,
+          "roi": 8.6034
+        },
+        {
+          "timestamp": 1769126400000,
+          "roi": 3.227600000000002
+        },
+        {
+          "timestamp": 1769212800000,
+          "roi": 4.43
+        },
+        {
+          "timestamp": 1769472000000,
+          "roi": 5.6442000000000005
+        },
+        {
+          "timestamp": 1769558400000,
+          "roi": 8.165
+        },
+        {
+          "timestamp": 1769644800000,
+          "roi": 9.421599999999998
+        },
+        {
+          "timestamp": 1769731200000,
+          "roi": 10.653600000000006
+        },
+        {
+          "timestamp": 1769817600000,
+          "roi": 13.081600000000016
+        },
+        {
+          "timestamp": 1769990399430,
+          "roi": 13.081600000000016
+        }
+      ]
+    },
+    "period1y": {
+      "totalRoi": 13.081600000000016,
+      "points": [
+        {
+          "timestamp": 1767225600000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1767312000000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1767398400000,
+          "roi": 2.4352999999999887
+        },
+        {
+          "timestamp": 1767657600000,
+          "roi": 3.638099999999995
+        },
+        {
+          "timestamp": 1767744000000,
+          "roi": 4.846700000000001
+        },
+        {
+          "timestamp": 1767830400000,
+          "roi": 6.0673999999999975
+        },
+        {
+          "timestamp": 1767916800000,
+          "roi": 2.2072999999999956
+        },
+        {
+          "timestamp": 1768003200000,
+          "roi": 4.655599999999995
+        },
+        {
+          "timestamp": 1768262400000,
+          "roi": 5.888799999999992
+        },
+        {
+          "timestamp": 1768348800000,
+          "roi": 8.429899999999998
+        },
+        {
+          "timestamp": 1768435200000,
+          "roi": 9.6508
+        },
+        {
+          "timestamp": 1768521600000,
+          "roi": 12.067000000000007
+        },
+        {
+          "timestamp": 1768608000000,
+          "roi": 13.337700000000005
+        },
+        {
+          "timestamp": 1768867200000,
+          "roi": 6.122200000000012
+        },
+        {
+          "timestamp": 1768953600000,
+          "roi": 7.387800000000007
+        },
+        {
+          "timestamp": 1769040000000,
+          "roi": 8.6034
+        },
+        {
+          "timestamp": 1769126400000,
+          "roi": 3.227600000000002
+        },
+        {
+          "timestamp": 1769212800000,
+          "roi": 4.43
+        },
+        {
+          "timestamp": 1769472000000,
+          "roi": 5.6442000000000005
+        },
+        {
+          "timestamp": 1769558400000,
+          "roi": 8.165
+        },
+        {
+          "timestamp": 1769644800000,
+          "roi": 9.421599999999998
+        },
+        {
+          "timestamp": 1769731200000,
+          "roi": 10.653600000000006
+        },
+        {
+          "timestamp": 1769817600000,
+          "roi": 13.081600000000016
+        },
+        {
+          "timestamp": 1769990399430,
+          "roi": 13.081600000000016
+        }
+      ]
+    },
+    "periodAll": {
+      "totalRoi": 13.081600000000016,
+      "points": [
+        {
+          "timestamp": 1767225600000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1767312000000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1767398400000,
+          "roi": 2.4352999999999887
+        },
+        {
+          "timestamp": 1767657600000,
+          "roi": 3.638099999999995
+        },
+        {
+          "timestamp": 1767744000000,
+          "roi": 4.846700000000001
+        },
+        {
+          "timestamp": 1767830400000,
+          "roi": 6.0673999999999975
+        },
+        {
+          "timestamp": 1767916800000,
+          "roi": 2.2072999999999956
+        },
+        {
+          "timestamp": 1768003200000,
+          "roi": 4.655599999999995
+        },
+        {
+          "timestamp": 1768262400000,
+          "roi": 5.888799999999992
+        },
+        {
+          "timestamp": 1768348800000,
+          "roi": 8.429899999999998
+        },
+        {
+          "timestamp": 1768435200000,
+          "roi": 9.6508
+        },
+        {
+          "timestamp": 1768521600000,
+          "roi": 12.067000000000007
+        },
+        {
+          "timestamp": 1768608000000,
+          "roi": 13.337700000000005
+        },
+        {
+          "timestamp": 1768867200000,
+          "roi": 6.122200000000012
+        },
+        {
+          "timestamp": 1768953600000,
+          "roi": 7.387800000000007
+        },
+        {
+          "timestamp": 1769040000000,
+          "roi": 8.6034
+        },
+        {
+          "timestamp": 1769126400000,
+          "roi": 3.227600000000002
+        },
+        {
+          "timestamp": 1769212800000,
+          "roi": 4.43
+        },
+        {
+          "timestamp": 1769472000000,
+          "roi": 5.6442000000000005
+        },
+        {
+          "timestamp": 1769558400000,
+          "roi": 8.165
+        },
+        {
+          "timestamp": 1769644800000,
+          "roi": 9.421599999999998
+        },
+        {
+          "timestamp": 1769731200000,
+          "roi": 10.653600000000006
+        },
+        {
+          "timestamp": 1769817600000,
+          "roi": 13.081600000000016
+        },
+        {
+          "timestamp": 1769990399430,
+          "roi": 13.081600000000016
+        }
+      ]
+    }
+  }
+}</script>
+        <!-- endBacktestingReport -->
+    </head>
+    <body>
+        <div class="spinner-a spinner-b spinner-c spinner-d spinner-e spinner-f spinner-g spinner-h spinner-i spinner-j spinner-k spinner-l spinner-m spinner-n spinner-o spinner-p spinner-q spinner-r spinner-s spinner-t spinner-u spinner-v spinner-w spinner-x spinner-y spinner-z spinner-ab spinner-ac spinner-ae spinner-af spinner-ag spinner-ah spinner-ai spinner-aj spinner-ak spinner-al spinner-am spinner-an spinner-ao spinner-ap spinner-aq spinner-ar spinner-as spinner-at spinner-au spinner-av spinner-aw spinner-ax spinner-ay spinner-az spinner-ba spinner-bb spinner-bc spinner-bd spinner-be spinner-bf spinner-bg waitingIndicator" data-test-id="loader"></div>
+        <div id="root"></div>
+
+            <script id="init" defer src="https://backtesting.ctrader.com/v5.0.0/bundle/index-31bd62a5e13b796fd66a.js"></script>
+
+        <script type="text/javascript" id="app-init">
+            var script = document.getElementById('init');
+            script.onload = () => {
+                initApp('root');
+
+                script.remove();
+                document.getElementById('app-init').remove();
+            }
+        </script>
+    </body>
+</html>
